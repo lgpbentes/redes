@@ -10,6 +10,7 @@ use Yii;
  * @property string $id
  * @property string $autor
  * @property string $nome
+ * @property string $imagem
  * @property string $descricao
  * @property integer $qteGostei
  * @property integer $qteNaoGostei
@@ -42,8 +43,8 @@ class Historia extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
-            [['descricao'], 'string'],
+            [['id', 'imagem'], 'required'],
+            [['imagem', 'descricao'], 'string'],
             [['qteGostei', 'qteNaoGostei', 'qteDenuncias', 'duracao', 'status'], 'integer'],
             [['id'], 'string', 'max' => 6],
             [['autor', 'nome', 'moderador'], 'string', 'max' => 20],
@@ -61,6 +62,7 @@ class Historia extends \yii\db\ActiveRecord
             'id' => 'ID',
             'autor' => 'Autor',
             'nome' => 'Nome',
+            'imagem' => 'Imagem',
             'descricao' => 'Descricao',
             'qteGostei' => 'Qte Gostei',
             'qteNaoGostei' => 'Qte Nao Gostei',
