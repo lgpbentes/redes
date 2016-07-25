@@ -22,17 +22,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'descricao')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'qteGostei')->textInput() ?>
-
-    <?= $form->field($model, 'qteNaoGostei')->textInput() ?>
-
-    <?= $form->field($model, 'qteDenuncias')->textInput() ?>
-
     <?= $form->field($model, 'duracao')->textInput() ?>
-
-    <?= $form->field($model, 'status')->textInput() ?>
-
-    <?= $form->field($model, 'moderador')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

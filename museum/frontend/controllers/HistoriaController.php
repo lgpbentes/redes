@@ -64,6 +64,11 @@ class HistoriaController extends Controller
     public function actionCreate()
     {
         $model = new Historia();
+        $model->qteGostei=0;
+        $model->qteNaoGostei=0;
+        $model->qteDenuncias=0;
+        $model->status=0;
+        $model->moderador=null;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
