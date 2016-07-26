@@ -8,6 +8,7 @@ use frontend\models\HistoriaSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * HistoriaController implements the CRUD actions for Historia model.
@@ -61,6 +62,8 @@ class HistoriaController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
+
+
     public function actionCreate()
     {
         $model = new Historia();
@@ -69,9 +72,13 @@ class HistoriaController extends Controller
         $model->qteDenuncias=0;
         $model->status=0;
         $model->moderador=null;
+        if ($model->load(Yii::$app->request->post())) {
+            $model->imagem = UploadedFile::getInstance($model, 'imagem');
+            $model->upload();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            if ($model->save(false)) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -110,6 +117,7 @@ class HistoriaController extends Controller
 
         return $this->redirect(['index']);
     }
+
 
     /**
      * Finds the Historia model based on its primary key value.

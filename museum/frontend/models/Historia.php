@@ -43,8 +43,9 @@ class Historia extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'imagem'], 'required'],
-            [['imagem', 'descricao'], 'string'],
+            [['descricao', 'duracao', 'imagem'], 'required'],
+            [['imagem'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
+            [['descricao'], 'string'],
             [['qteGostei', 'qteNaoGostei', 'qteDenuncias', 'duracao', 'status'], 'integer'],
             [['id'], 'string', 'max' => 6],
             [['autor', 'nome', 'moderador'], 'string', 'max' => 20],
@@ -127,5 +128,21 @@ class Historia extends \yii\db\ActiveRecord
     public function getUsuarios0()
     {
         return $this->hasMany(Usuario::className(), ['username' => 'usuario'])->viaTable('Usuario_reage_Historia', ['historia' => 'id']);
+    }
+
+    private $nome, $extensao;
+    public function upload()
+    {
+
+        $nome= "imagem_" . $this->imagem->basename;
+        $extensao = $this->imagem->extension;
+        if ($this->validate()) {
+            $this->imagem->saveAs('/var/www/html/redes/museum/images/' . $nome . '.' . $extensao);
+            $this->imagem="/images/".$nome.'.'.$extensao;
+
+            return true;
+        } else {
+            return false;
+        }
     }
 }
