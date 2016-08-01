@@ -3,6 +3,13 @@
 namespace frontend\models;
 
 use Yii;
+use yii\helpers\FileHelper;
+use yii\imagine\Image;
+use yii\helpers\Json;
+use Imagine\Image\Box;
+use Imagine\Image\Point;
+use yii\web\UploadedFile;
+
 
 /**
  * This is the model class for table "Historia".
@@ -27,11 +34,16 @@ use Yii;
  * @property UsuarioReageHistoria[] $usuarioReageHistorias
  * @property Usuario[] $usuarios0
  */
+
 class Historia extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
+    public $crop_info;
+    public $image;
+    public $image_bkp;
+
     public static function tableName()
     {
         return 'Historia';
@@ -44,6 +56,7 @@ class Historia extends \yii\db\ActiveRecord
     {
         return [
             [['descricao', 'duracao', 'imagem'], 'required'],
+            ['crop_info', 'safe'],
             [['imagem'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
             [['descricao'], 'string'],
             [['qteGostei', 'qteNaoGostei', 'qteDenuncias', 'duracao', 'status'], 'integer'],
@@ -145,4 +158,57 @@ class Historia extends \yii\db\ActiveRecord
             return false;
         }
     }
+
+
+    /**
+     * @param bool $insert
+     * @param array $changedAttributes
+     */
+    public function afterSave($insert, $changedAttributes)
+    {
+        // open image
+        $image = Image::getImagine()->open('/var/www/html/redes/museum/'.$this->imagem);
+
+        // rendering information about crop of ONE option
+        $cropInfo = Json::decode($this->crop_info)[0];
+        $cropInfo['dWidth'] = (int)$cropInfo['dWidth']; //new width image
+        $cropInfo['dHeight'] = (int)$cropInfo['dHeight']; //new height image
+        $cropInfo['x'] = $cropInfo['x']; //begin position of frame crop by X
+        $cropInfo['y'] = $cropInfo['y']; //begin position of frame crop by Y
+
+
+        //delete old images
+        $oldImages = FileHelper::findFiles(Yii::getAlias('/var/www/html/redes/museum/images'), [
+            'only' => [
+                $this->imagem
+            ],
+        ]);
+        for ($i = 0; $i != count($oldImages); $i++) {
+            @unlink($oldImages[$i]);
+        }
+
+        //saving thumbnail
+        $newSizeThumb = new Box($cropInfo['dWidth'], $cropInfo['dHeight']);
+        $cropSizeThumb = new Box(500, 500); //frame size of crop
+        $cropPointThumb = new Point($cropInfo['x'], $cropInfo['y']);
+        $pathThumbImage = Yii::getAlias('/var/www/html/redes/museum/images')
+            . '/publicacao_'
+            . $this->id
+            . '.jpg';
+
+        $this->imagem='images/'.'publicacao_'.$this->id;
+        $this->image_bkp='images/'.'publicacao_'.$this->id;
+
+        $urlImagem = 'images/'.'publicacao_'.$this->id . '.jpg';
+        $meuid= $this->id;
+        $command = Yii::$app->db->createCommand("UPDATE Historia SET imagem='$urlImagem' WHERE id='$meuid'");
+
+        $command->execute();
+
+        $image->resize($newSizeThumb)
+            ->crop($cropPointThumb, $cropSizeThumb)
+            ->save($pathThumbImage, ['quality' => 100]);
+    }
+
+
 }

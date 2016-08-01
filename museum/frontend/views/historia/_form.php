@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\bootstrap\Dropdown;
+use bupy7\cropbox\Cropbox;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Historia */
@@ -27,8 +28,10 @@ $items = array(
 
     <?= $form->field($model, 'nome')->textInput(['maxlength' => true]) ?>
 
-<!--    <?= $form->field($model, 'imagem')->textarea(['rows' => 6]) ?>-->
-    <?= $form->field($model, 'imagem')->fileInput(['class'=>'form-control']) ?>
+<!--   <?= $form->field($model, 'imagem')->fileInput(['class'=>'form-control']) ?>-->
+    <?=$form->field($model, 'imagem')->widget(Cropbox::className(), [
+    'attributeCropInfo' => 'crop_info']) ?>
+
 
     <?= $form->field($model, 'descricao')->textarea(['rows' => 6]) ?>
 

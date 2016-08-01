@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'yii\\swiftmailer\\' => array($vendorDir . '/yiisoft/yii2-swiftmailer'),
+    'yii\\imagine\\' => array($vendorDir . '/yiisoft/yii2-imagine'),
     'yii\\gii\\' => array($vendorDir . '/yiisoft/yii2-gii'),
     'yii\\faker\\' => array($vendorDir . '/yiisoft/yii2-faker'),
     'yii\\debug\\' => array($vendorDir . '/yiisoft/yii2-debug'),
@@ -17,5 +18,6 @@ return array(
     'dosamigos\\gallery\\' => array($vendorDir . '/2amigos/yii2-gallery-widget/src'),
     'dosamigos\\fileupload\\' => array($vendorDir . '/2amigos/yii2-file-upload-widget/src'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+    'bupy7\\cropbox\\' => array($vendorDir . '/bupy7/yii2-widget-cropbox'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
 );

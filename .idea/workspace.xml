@@ -2,9 +2,352 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfee9a41-2076-4db4-a12f-7c8d28e3f762" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/museum/images/imagem_Captura de tela de 2016-07-10 19:55:30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/museum/images/imagem_Captura de tela de 2016-07-19 16:16:46.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/images/imagem_Captura de tela de 2016-07-11 04:46:47.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/images/imagem_Captura de tela de 2016-07-21 09:23:38.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/images/imagem_Captura de tela de 2016-07-26 12:21:41.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/images/publicacao_43.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/images/publicacao_44.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/images/publicacao_45.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/i/arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/i/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/i/results_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/i/tree_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_static/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_static/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_static/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/anima.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/cat.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/font/Arial.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/google.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/large.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/pink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/resize/210-design-19933.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/results/blank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/results/crop_resize_flip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/results/gradient.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/results/layers-multi-mono.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/results/layers-multi-multi.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/results/rotate.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/results/thumbnails/inset.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/results/thumbnails/outbound.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/sample.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/trans.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/trans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/xparent.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Fixtures/yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Issues/multi-layer.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/minhaprimeirapagina.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jq-cropbox/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jq-cropbox/dist/jquery.cropbox.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jq-cropbox/dist/jquery.cropbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jq-cropbox/src/jquery.cropbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jq-cropbox/src/jquery.cropbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jquery-mousewheel/ChangeLog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jquery-mousewheel/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jquery-mousewheel/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jquery-mousewheel/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jquery-mousewheel/jquery.mousewheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bower/jquery-mousewheel/jquery.mousewheel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/Cropbox.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/CropboxAsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/MouseWheelAsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/WidgetAsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/assets/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/messages/hu/core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/messages/it/core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/messages/nl/core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/messages/pt-BR/core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/messages/ru/core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/messages/tr/core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/bupy7/yii2-widget-cropbox/views/field.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Draw.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Draw/DrawerInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Draw/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Effects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Effects/EffectsInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Effects/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Exception.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Exception/Exception.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Exception/InvalidArgumentException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Exception/OutOfBoundsException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Exception/RuntimeException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Exception/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Advanced.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Advanced/Border.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Advanced/Canvas.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Advanced/Grayscale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Advanced/OnPixelBased.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Advanced/RelativeResize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Advanced/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/ApplyMask.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Copy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Crop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Fill.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/FlipHorizontally.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/FlipVertically.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Paste.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Resize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Rotate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Save.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Show.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Strip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/Thumbnail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Basic/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/FilterInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/ImagineAware.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/Transformation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Filter/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gd/Drawer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gd/Effects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gd/Font.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gd/Image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gd/Imagine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gd/Layers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gd/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gmagick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gmagick/Drawer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gmagick/Effects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gmagick/Font.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gmagick/Image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gmagick/Imagine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gmagick/Layers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Gmagick/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/AbstractFont.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/AbstractLayers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Box.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/BoxInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Fill.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Fill/FillInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Fill/Gradient.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Fill/Gradient/Horizontal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Fill/Gradient/Linear.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Fill/Gradient/Vertical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Fill/Gradient/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Fill/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/FontInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Histogram.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Histogram/Bucket.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Histogram/Range.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Histogram/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/ImageInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/ImagineInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/LayersInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/ManipulatorInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Point.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Point/Center.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/Point/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/PointInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Image/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Imagick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Imagick/Drawer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Imagick/Effects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Imagick/Font.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Imagick/Image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Imagick/Imagine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Imagick/Layers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Imagick/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Test/Constraint.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Test/Constraint/IsImageEqual.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Test/Constraint/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Test/ImagineTestCase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/Test/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/Imagine/namespace-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/PROJECT_VERSION" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/SAMI_VERSION" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/classes-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/classes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/css/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/css/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/doc-index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/interfaces.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/js/jquery-1.3.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/js/searchdoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/namespaces-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/namespaces.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/opensearch.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/panel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/renderer.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/search_index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/API/API/tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_static/pygments.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_themes/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_themes/imagine/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_themes/imagine/static/imagine.css_t" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/_themes/imagine/theme.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/conf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/index.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/requirements.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/sami_configuration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/usage/coordinates.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/usage/drawing.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/usage/effects.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/usage/exceptions.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/usage/filters.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/usage/introduction.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/docs/usage/layers.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Draw/DrawerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Effects/EffectsInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Exception/Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Exception/InvalidArgumentException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Exception/OutOfBoundsException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Exception/RuntimeException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Advanced/Border.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Advanced/Canvas.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Advanced/Grayscale.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Advanced/OnPixelBased.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Advanced/RelativeResize.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/ApplyMask.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Copy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Crop.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Fill.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/FlipHorizontally.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/FlipVertically.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Paste.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Resize.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Rotate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Save.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Show.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Strip.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Basic/Thumbnail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/FilterInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/ImagineAware.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Filter/Transformation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gd/Drawer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gd/Effects.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gd/Font.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gd/Image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gd/Imagine.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gd/Layers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gmagick/Drawer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gmagick/Effects.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gmagick/Font.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gmagick/Image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gmagick/Imagine.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Gmagick/Layers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/AbstractFont.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/AbstractLayers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Box.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/BoxInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Color.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Fill/FillInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Fill/Gradient/Horizontal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Fill/Gradient/Linear.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Fill/Gradient/Vertical.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/FontInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Histogram/Bucket.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Histogram/Range.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/ImageInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/ImagineInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/LayersInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/ManipulatorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Point.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/Point/Center.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Image/PointInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Imagick/Drawer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Imagick/Effects.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Imagick/Font.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Imagick/Image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Imagick/Imagine.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Imagick/Layers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Test/Constraint/IsImageEqual.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/lib/Imagine/Test/ImagineTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Draw/AbstractDrawerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Effects/AbstractEffectsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Advanced/BorderTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Advanced/CanvasTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Advanced/GrayscaleTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/CopyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/CropTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/FlipHorizontallyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/FlipVerticallyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/PasteTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/ResizeTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/RotateTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/SaveTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/ShowTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/StripTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/Basic/ThumbnailTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/DummyImagineAwareFilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/FilterTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/ImagineAwareTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Filter/TransformationTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Functional/GdTransparentGifHandlingTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gd/DrawerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gd/EffectsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gd/ImageTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gd/ImagineTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gd/LayersTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gmagick/DrawerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gmagick/EffectsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gmagick/ImageTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gmagick/ImagineTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Gmagick/LayersTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/AbstractImageTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/AbstractImagineTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/AbstractLayersTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/BoxTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/ColorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/Fill/Gradient/HorizontalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/Fill/Gradient/LinearTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/Fill/Gradient/VerticalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/Histogram/BucketTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/Histogram/RangeTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/Point/CenterTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Image/PointTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Imagick/DrawerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Imagick/EffectsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Imagick/ImageTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Imagick/ImagineTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Imagick/LayersTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Issues/Issue131Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Issues/Issue17Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Issues/Issue59Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/Imagine/Test/Issues/Issue67Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/imagine/imagine/tests/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/yiisoft/yii2-imagine/BaseImage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/yiisoft/yii2-imagine/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/yiisoft/yii2-imagine/Image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/yiisoft/yii2-imagine/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/yiisoft/yii2-imagine/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/museum/vendor/yiisoft/yii2-imagine/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/processa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/composer.json" afterPath="$PROJECT_DIR$/museum/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/composer.lock" afterPath="$PROJECT_DIR$/museum/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/frontend/controllers/HistoriaController.php" afterPath="$PROJECT_DIR$/museum/frontend/controllers/HistoriaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/frontend/models/Historia.php" afterPath="$PROJECT_DIR$/museum/frontend/models/Historia.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/frontend/views/historia/_form.php" afterPath="$PROJECT_DIR$/museum/frontend/views/historia/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/museum/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/museum/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/museum/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/museum/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/museum/vendor/yiisoft/extensions.php" afterPath="$PROJECT_DIR$/museum/vendor/yiisoft/extensions.php" />
     </list>
     <ignored path="redes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +371,8 @@
       <file leaf-file-name="HistoriaController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/museum/frontend/controllers/HistoriaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+            <state relative-caret-position="1110">
+              <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
               <folding>
                 <element signature="e#40#48#0#PHP" expanded="true" />
               </folding>
@@ -37,31 +380,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseActiveRecord.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/museum/vendor/yiisoft/yii2/db/BaseActiveRecord.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="597" column="31" selection-start-line="597" selection-start-column="31" selection-end-line="597" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/museum/frontend/views/historia/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+            <state relative-caret-position="420">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding>
                 <element signature="e#7#28#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#2;n#div#0;n#!!top" expanded="true" />
-                <marker date="1469645910622" expanded="true" signature="331:371" ph="..." />
-                <marker date="1469645910622" expanded="true" signature="1140:1173" ph="{...}" />
-                <marker date="1469645910622" expanded="true" signature="1547:1580" ph="{...}" />
-                <marker date="1469645910622" expanded="true" signature="1952:1985" ph="{...}" />
-                <marker date="1469645910622" expanded="true" signature="2516:2570" ph="..." />
+                <marker date="1470056739262" expanded="true" signature="358:398" ph="..." />
+                <marker date="1470056739262" expanded="true" signature="1214:1247" ph="{...}" />
+                <marker date="1470056739262" expanded="true" signature="1621:1654" ph="{...}" />
+                <marker date="1470056739262" expanded="true" signature="2026:2059" ph="{...}" />
+                <marker date="1470056739262" expanded="true" signature="2590:2644" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,8 +400,24 @@
       <file leaf-file-name="Historia.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/museum/frontend/models/Historia.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="137" column="45" selection-start-line="136" selection-start-column="8" selection-end-line="137" selection-end-column="45" />
+            <state relative-caret-position="377">
+              <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+              <folding>
+                <element signature="e#35#43#0#PHP" expanded="true" />
+                <marker date="1470060214086" expanded="true" signature="5987:6036" ph="UPDATE Histo... " />
+                <marker date="1470060214086" expanded="true" signature="5987:6037" ph="UPDATE Histo... " />
+                <marker date="1470060214086" expanded="true" signature="5987:6043" ph="UPDATE Histo... " />
+                <marker date="1470060214086" expanded="true" signature="5987:6044" ph="UPDATE Histo... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/museum/frontend/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -123,9 +469,9 @@
         <option value="$PROJECT_DIR$/museum/composer.json" />
         <option value="$PROJECT_DIR$/museum/frontend/views/historia/view.php" />
         <option value="$PROJECT_DIR$/museum/frontend/views/historia/index.php" />
-        <option value="$PROJECT_DIR$/museum/frontend/models/Historia.php" />
-        <option value="$PROJECT_DIR$/museum/frontend/controllers/HistoriaController.php" />
         <option value="$PROJECT_DIR$/museum/frontend/views/historia/_form.php" />
+        <option value="$PROJECT_DIR$/museum/frontend/controllers/HistoriaController.php" />
+        <option value="$PROJECT_DIR$/museum/frontend/models/Historia.php" />
       </list>
     </option>
   </component>
@@ -141,9 +487,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="y" value="17" />
     <option name="width" value="1368" />
-    <option name="height" value="727" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -192,6 +537,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -305,6 +651,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="museum" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -381,7 +753,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,6 +760,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="baseIm&#9;null&#9;null" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -461,7 +833,11 @@
       <workItem from="1469454054413" duration="7594000" />
       <workItem from="1469555785831" duration="12183000" />
       <workItem from="1469579759460" duration="2590000" />
-      <workItem from="1469641168265" duration="4891000" />
+      <workItem from="1469641168265" duration="5291000" />
+      <workItem from="1469652495095" duration="214000" />
+      <workItem from="1469988376148" duration="1230000" />
+      <workItem from="1470013978384" duration="10814000" />
+      <workItem from="1470065354130" duration="396000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <created>1468516356197</created>
@@ -495,7 +871,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52941000" />
+    <option name="totallyTimeSpent" value="65995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,16 +883,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="17" width="1368" height="727" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28247735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29984894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49697885" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103896104" sideWeight="0.5030211" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.4879154" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10684474" sideWeight="0.49697885" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10551948" sideWeight="0.49697885" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -563,41 +939,16 @@
     <MESSAGE value="Adicionados CRUD do Moderador e Crud da História. Banco modificado." />
     <MESSAGE value="Fazendo alterações no CRUD da História" />
     <MESSAGE value="Adicionado upload de imagem no Crud da história.&#10;Crud ainda em desenvolvimento..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado upload de imagem no Crud da história.&#10;Crud ainda em desenvolvimento..." />
+    <MESSAGE value="Adicionado crop da imagem ao fazer upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado crop da imagem ao fazer upload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/museum/frontend/views/historia/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1469645910622" expanded="true" signature="331:371" ph="..." />
-            <marker date="1469645910622" expanded="true" signature="1140:1173" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1547:1580" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1952:1985" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="2516:2570" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/museum/frontend/models/Historia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="137" column="45" selection-start-line="136" selection-start-column="8" selection-end-line="137" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/museum/vendor/yiisoft/yii2/base/Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5220">
@@ -626,7 +977,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+            <marker date="1470060214086" expanded="true" signature="5987:6036" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6037" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6043" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6044" ph="UPDATE Histo... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,7 +998,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+            <marker date="1470060214086" expanded="true" signature="5987:6036" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6037" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6043" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6044" ph="UPDATE Histo... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -666,14 +1029,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1469645910622" expanded="true" signature="331:371" ph="..." />
-            <marker date="1469645910622" expanded="true" signature="1140:1173" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1547:1580" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1952:1985" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="2516:2570" ph="..." />
+            <marker date="1470056739262" expanded="true" signature="358:398" ph="..." />
+            <marker date="1470056739262" expanded="true" signature="1214:1247" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="1621:1654" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="2026:2059" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="2590:2644" ph="..." />
           </folding>
         </state>
       </provider>
@@ -713,7 +1073,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+            <marker date="1470060214086" expanded="true" signature="5987:6036" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6037" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6043" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6044" ph="UPDATE Histo... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -738,14 +1104,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1469645910622" expanded="true" signature="331:371" ph="..." />
-            <marker date="1469645910622" expanded="true" signature="1140:1173" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1547:1580" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1952:1985" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="2516:2570" ph="..." />
+            <marker date="1470056739262" expanded="true" signature="358:398" ph="..." />
+            <marker date="1470056739262" expanded="true" signature="1214:1247" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="1621:1654" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="2026:2059" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="2590:2644" ph="..." />
           </folding>
         </state>
       </provider>
@@ -778,7 +1141,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+            <marker date="1470060214086" expanded="true" signature="5987:6036" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6037" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6043" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6044" ph="UPDATE Histo... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -803,14 +1172,11 @@
           <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1469645910622" expanded="true" signature="331:371" ph="..." />
-            <marker date="1469645910622" expanded="true" signature="1140:1173" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1547:1580" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1952:1985" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="2516:2570" ph="..." />
+            <marker date="1470056739262" expanded="true" signature="358:398" ph="..." />
+            <marker date="1470056739262" expanded="true" signature="1214:1247" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="1621:1654" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="2026:2059" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="2590:2644" ph="..." />
           </folding>
         </state>
       </provider>
@@ -843,7 +1209,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+            <marker date="1470060214086" expanded="true" signature="5987:6036" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6037" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6043" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6044" ph="UPDATE Histo... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,7 +1230,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+            <marker date="1470060214086" expanded="true" signature="5987:6036" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6037" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6043" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6044" ph="UPDATE Histo... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -883,13 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4110">
           <caret line="285" column="39" selection-start-line="285" selection-start-column="39" selection-end-line="285" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/museum/frontend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -952,36 +1323,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/museum/frontend/views/historia/_form.php">
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/helpers/BaseHtml.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1469645910622" expanded="true" signature="331:371" ph="..." />
-            <marker date="1469645910622" expanded="true" signature="1140:1173" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1547:1580" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="1952:1985" ph="{...}" />
-            <marker date="1469645910622" expanded="true" signature="2516:2570" ph="..." />
-          </folding>
+        <state relative-caret-position="174">
+          <caret line="496" column="27" selection-start-line="496" selection-start-column="27" selection-end-line="496" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/museum/vendor/yiisoft/yii2-imagine/BaseImage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/museum/frontend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/museum/vendor/yiisoft/yii2/db/BaseActiveRecord.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="597" column="31" selection-start-line="597" selection-start-column="31" selection-end-line="597" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="166">
+          <caret line="594" column="20" selection-start-line="594" selection-start-column="20" selection-end-line="594" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/museum/frontend/views/historia/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+            <marker date="1470056739262" expanded="true" signature="358:398" ph="..." />
+            <marker date="1470056739262" expanded="true" signature="1214:1247" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="1621:1654" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="2026:2059" ph="{...}" />
+            <marker date="1470056739262" expanded="true" signature="2590:2644" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/museum/frontend/controllers/HistoriaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        <state relative-caret-position="1110">
+          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
           <folding>
             <element signature="e#40#48#0#PHP" expanded="true" />
           </folding>
@@ -990,9 +1380,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/museum/frontend/models/Historia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="137" column="45" selection-start-line="136" selection-start-column="8" selection-end-line="137" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="377">
+          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+            <marker date="1470060214086" expanded="true" signature="5987:6036" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6037" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6043" ph="UPDATE Histo... " />
+            <marker date="1470060214086" expanded="true" signature="5987:6044" ph="UPDATE Histo... " />
+          </folding>
         </state>
       </provider>
     </entry>

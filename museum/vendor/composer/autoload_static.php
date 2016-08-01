@@ -15,6 +15,7 @@ class ComposerStaticInitfaa8d799f227b89d422eb6342e5faa54
         'y' => 
         array (
             'yii\\swiftmailer\\' => 16,
+            'yii\\imagine\\' => 12,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
             'yii\\debug\\' => 10,
@@ -32,6 +33,10 @@ class ComposerStaticInitfaa8d799f227b89d422eb6342e5faa54
         array (
             'cebe\\markdown\\' => 14,
         ),
+        'b' => 
+        array (
+            'bupy7\\cropbox\\' => 14,
+        ),
         'F' => 
         array (
             'Faker\\' => 6,
@@ -42,6 +47,10 @@ class ComposerStaticInitfaa8d799f227b89d422eb6342e5faa54
         'yii\\swiftmailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer',
+        ),
+        'yii\\imagine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-imagine',
         ),
         'yii\\gii\\' => 
         array (
@@ -83,6 +92,10 @@ class ComposerStaticInitfaa8d799f227b89d422eb6342e5faa54
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
         ),
+        'bupy7\\cropbox\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bupy7/yii2-widget-cropbox',
+        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
@@ -90,6 +103,13 @@ class ComposerStaticInitfaa8d799f227b89d422eb6342e5faa54
     );
 
     public static $prefixesPsr0 = array (
+        'I' => 
+        array (
+            'Imagine' => 
+            array (
+                0 => __DIR__ . '/..' . '/imagine/imagine/lib',
+            ),
+        ),
         'H' => 
         array (
             'HTMLPurifier' => 

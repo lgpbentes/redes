@@ -77,6 +77,7 @@ class HistoriaController extends Controller
             $model->upload();
 
             if ($model->save(false)) {
+
                 return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
