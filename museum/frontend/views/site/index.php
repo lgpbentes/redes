@@ -6,48 +6,61 @@ $this->title = 'Museum';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+    <!-- LARISSA BENTES -->
+    <div class="col-md-6">
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
 
-    <div class="body-content">
+        <!-- Modal -->
+        <div class="modal fade" id="MoreInfoModal" role="dialog">
+            <div class="modal-dialog">
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Título da foto</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>História do Objeto</p>
+                    </div>
+                    <div class="modal-footer">
+                        <div align="left">
+                            <button type="button" class="btn btn-success btn-sm"><i class="fa fa-thumbs-up"></i> </button>
+                            <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i> </button>
+                        </div>
+                    </div>
+                </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
         </div>
 
+
+        <!-- Box Header -->
+        <div class="box box-widget">
+            <div class="box-header with-border">
+
+                <div class="user-block">
+                    <img class="img-circle" src="photo2.png" alt="Imagem do usuário">
+                    <span class="username"><a href="#">Nome do Usuário - Ou Privado</a></span>
+                    <span class="description">Tempo do relacionamento: X dias</span>
+                </div>
+
+                <div class="box-tools">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
+
+            </div>
+
+            <!-- box-body -->
+            <div class="box-body" style="display: block;">
+                <img class="img-responsive pad" src="user3-128x128.jpg" alt="Photo">
+                <p>Título da foto</p>
+                <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i> Saber mais</button>
+                <span class="pull-right text-muted">3 views - 100 likes - 127 dislikes</span>
+            </div><!-- /.box-body -->
+
+        </div>
     </div>
+
 </div>

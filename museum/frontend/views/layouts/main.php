@@ -19,7 +19,7 @@ $baseUrl = $asset->baseUrl
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="sidebar-mini skin-blue fixed">
+<body class="sidebar-mini skin-blue-light">
 <!-- <body class = "sidebar-mini skin-blue-light"> -->
 <?php $this->beginBody() ?>
 
