@@ -1,5 +1,5 @@
 <?php
-
+use frontend\models\Historia;
 /* @var $this yii\web\View */
 
 $this->title = 'Museum';
@@ -19,10 +19,10 @@ $this->title = 'Museum';
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Título da foto</h4>
+                        <h4 id="detalheTitulo" class="modal-title">Título da foto</h4>
                     </div>
                     <div class="modal-body">
-                        <p>História do Objeto</p>
+                        <p id="detalheHistoria">História do Objeto</p>
                     </div>
                     <div class="modal-footer">
                         <div align="left">
@@ -37,30 +37,68 @@ $this->title = 'Museum';
 
 
         <!-- Box Header -->
-        <div class="box box-widget">
-            <div class="box-header with-border">
+        <?php
+        $historias = Historia::find()->all();
+        foreach ($historias as $id => $hist){
+            //var_dump($hist);
 
-                <div class="user-block">
-                    <img class="img-circle" src="photo2.png" alt="Imagem do usuário">
-                    <span class="username"><a href="#">Nome do Usuário - Ou Privado</a></span>
-                    <span class="description">Tempo do relacionamento: X dias</span>
+            $numHistoria = $hist->id;
+            $autor = $hist->autor;
+            $caminhoImagem= "/redes/museum/".$hist->imagem;
+            $tempo = $hist->duracao;
+            $titulo = $hist->nome;
+            $qteLikes = $hist->qteGostei;
+            $qteDeslikes = $hist->qteNaoGostei;
+
+
+            ?>
+            <div class="box box-widget">
+                <div class="box-header with-border">
+
+                    <div class="user-block">
+                        <img class="img-circle" src="img/perfiltmp.png" alt="Imagem do usuário">
+                        <span class="username"><a href="#"><?=$autor?></a></span>
+                        <span class="description">Tempo do relacionamento: <?= $tempo ?> dias</span>
+                    </div>
+
+                    <div class="box-tools">
+                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+
                 </div>
 
-                <div class="box-tools">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                </div>
+                <!-- box-body -->
+                <div class="box-body" style="display: block;">
+                    <img class="img-responsive pad" src="<?= $caminhoImagem ?>" alt="Photo">
+                    <p><?=$titulo?></p>
+                    <button onclick="detalhar(<?=$numHistoria?>)" type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i> Saber mais</button>
+                    <span class="pull-right text-muted"><!--3 views - --> <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
 
-            </div>
+                </div><!-- /.box-body -->
 
-            <!-- box-body -->
-            <div class="box-body" style="display: block;">
-                <img class="img-responsive pad" src="user3-128x128.jpg" alt="Photo">
-                <p>Título da foto</p>
-                <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i> Saber mais</button>
-                <span class="pull-right text-muted">3 views - 100 likes - 127 dislikes</span>
-            </div><!-- /.box-body -->
 
+                <?php
+        }
+        ?>
         </div>
     </div>
 
 </div>
+
+<script>
+
+    function detalhar(id) {
+        var titulo, descricao;
+        titulo = document.querySelector("#detalheTitulo");
+        descricao = document.querySelector("#detalheHistoria");
+
+
+        $.get('index.php?r=site/detalhes&id='+id,function (dados) {
+            dados = JSON.parse(dados);
+
+            titulo.innerHTML = dados.titulo;
+            descricao.innerHTML= dados.descricao;
+
+        });
+    }
+</script>
