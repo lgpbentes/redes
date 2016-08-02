@@ -82,19 +82,37 @@
                     <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
-                    <form role="form">
+                    <form id="login-form" action="/redes/museum/frontend/web/index.php?r=site%2Flogin" method="post" role="form">
+                        <input type="hidden" name="_csrf-frontend" value="QWk5MDdtTXlwWVtGD1knEjhRbFljXj0cKhF9Vn0ZCiAeUG9IcQ5.MQ==">
+                        <div class="form-group field-loginform-username required">
+                            <label class="control-label" for="loginform-username">Username</label>
+                            <input type="text" id="loginform-username" class="form-control" name="LoginForm[username]" autofocus>
+
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div class="form-group field-loginform-password required">
+                            <label class="control-label" for="loginform-password">Password</label>
+                            <input type="password" id="loginform-password" class="form-control" name="LoginForm[password]">
+
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div class="form-group field-loginform-rememberme">
+                            <div class="checkbox">
+                                <label for="loginform-rememberme">
+                                    <input type="hidden" name="LoginForm[rememberMe]" value="0"><input type="checkbox" id="loginform-rememberme" name="LoginForm[rememberMe]" value="1" checked>
+                                    Remember Me
+                                </label>
+                                <p class="help-block help-block-error"></p>
+
+                            </div>
+                        </div>
+                        <div style="color:#999;margin:1em 0">
+                            If you forgot your password you can <a href="/redes/museum/frontend/web/index.php?r=site%2Frequest-password-reset">reset it</a>.
+                        </div>
+
                         <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="" checked>Remember me</label>
-                        </div>
-                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                            <button type="submit" class="btn btn-primary" name="login-button">Login</button>                </div>
+
                     </form>
                 </div>
                 <div class="modal-footer">

@@ -12,7 +12,8 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
-
+    public $dataNascimento;
+    public $cidade;
 
     /**
      * @inheritdoc
@@ -22,14 +23,17 @@ class SignupForm extends Model
         return [
             ['username', 'trim'],
             ['username', 'required'],
-            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'Esse username já está sendo utilizado'],
             ['username', 'string', 'min' => 2, 'max' => 255],
+
+            [['dataNascimento'], 'safe'],
+            [['cidade'], 'string', 'max' => 30],
 
             ['email', 'trim'],
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'Esse email já está sendo usado.'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
@@ -46,13 +50,15 @@ class SignupForm extends Model
         if (!$this->validate()) {
             return null;
         }
-        
+
         $user = new User();
         $user->username = $this->username;
         $user->email = $this->email;
+        $user->dataNascimento = $this->dataNascimento;
+        $user->cidade = $this->cidade;
         $user->setPassword($this->password);
         $user->generateAuthKey();
-        
+
         return $user->save() ? $user : null;
     }
 }

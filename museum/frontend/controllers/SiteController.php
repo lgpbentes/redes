@@ -105,7 +105,7 @@ class SiteController extends Controller
     {
         Yii::$app->user->logout();
 
-        return $this->goHome();
+        return Yii::$app->getResponse()->redirect('http://localhost/redes/museum/frontend/Landing_Page/');
     }
 
     /**

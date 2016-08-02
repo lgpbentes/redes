@@ -234,8 +234,15 @@
                 <a href="#" class="btn btn-default btn-flat">Profile</a>
             </div>
             <div class="pull-right">
-                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                <form action="/redes/museum/frontend/web/index.php?r=site%2Flogout" method="GET">
+                <button type="submit" class="btn btn-default btn-flat">Sair</button>
+                </form>
             </div>
+
+
+
+
+
         </li>
     </ul>
 </li>

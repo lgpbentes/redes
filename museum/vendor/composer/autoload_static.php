@@ -28,6 +28,7 @@ class ComposerStaticInitfaa8d799f227b89d422eb6342e5faa54
         array (
             'dosamigos\\gallery\\' => 18,
             'dosamigos\\fileupload\\' => 21,
+            'dosamigos\\datepicker\\' => 21,
         ),
         'c' => 
         array (
@@ -87,6 +88,10 @@ class ComposerStaticInitfaa8d799f227b89d422eb6342e5faa54
         'dosamigos\\fileupload\\' => 
         array (
             0 => __DIR__ . '/..' . '/2amigos/yii2-file-upload-widget/src',
+        ),
+        'dosamigos\\datepicker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-date-picker-widget/src',
         ),
         'cebe\\markdown\\' => 
         array (
