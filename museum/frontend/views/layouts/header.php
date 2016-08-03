@@ -111,7 +111,10 @@
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    <form action="/redes/museum/frontend/web/index.php?r=site%2Flogout" method="POST">
+                    <input type="hidden" name="_csrf-frontend">
+                    <button  href="/redes/museum/frontend/Landing_Page/?#" type="submit" class="btn btn-link">Sair</button></form>
+                </form>
                                 </div>
                             </li>
                         </ul>
