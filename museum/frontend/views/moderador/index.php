@@ -71,12 +71,14 @@ $this->title = 'Museum';
     function aprovar(id) {
         $.get('index.php?r=site/aprovacao&id='+id,function (dados) {
             console.log(dados);
+            location.reload();
         });
     }
 
     function reprovar(id) {
         $.get('index.php?r=site/reprovacao&id='+id,function (dados) {
             console.log(dados);
+            location.reload();
         });
     }
 
