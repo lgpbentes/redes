@@ -54,7 +54,7 @@ $this->title = 'Museum';
             $qteLikes = $hist->qteGostei;
             $qteDeslikes = $hist->qteNaoGostei;
 
-            if($hist->status == 0){
+            if($hist->status == 1){
 
 
             ?>

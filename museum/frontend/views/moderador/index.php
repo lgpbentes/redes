@@ -51,8 +51,8 @@ $this->title = 'Museum';
                         <p><?=$titulo?></p>
                         <p><?=$descricao?></p>
 
-                        <button type="button" class="btn btn-success btn-sm"><i class="fa fa-check"></i> </button>
-                        <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-close"></i> </button>
+                        <button onclick="aprovar(<?= $numHistoria ?>)" type="button" class="btn btn-success btn-sm"><i class="fa fa-check"></i> </button>
+                        <button onclick="reprovar(<?= $numHistoria ?>)" type="button" class="btn btn-danger btn-sm"><i class="fa fa-close"></i> </button>
 
                         <span class="pull-right text-muted"><?=$qteViews?> views -  <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
 
@@ -67,29 +67,16 @@ $this->title = 'Museum';
 </div>
 
 <script>
-    var historiaclicada;
-    function detalhar(id) {
-        historiaclicada = id;
-        var titulo, descricao;
-        titulo = document.querySelector("#detalheTitulo");
-        descricao = document.querySelector("#detalheHistoria");
 
-
-        $.get('index.php?r=site/detalhes&id='+id,function (dados) {
-            dados = JSON.parse(dados);
-
-            titulo.innerHTML = dados.titulo;
-            descricao.innerHTML= dados.descricao;
-
+    function aprovar(id) {
+        $.get('index.php?r=site/aprovacao&id='+id,function (dados) {
+            console.log(dados);
         });
     }
 
-    function like() {
-        $.get('index.php?r=site/like&id='+historiaclicada,function (dados) {});
-    }
-
-    function deslike() {
-        $.get('index.php?r=site/deslike&id='+historiaclicada,function (dados) {
+    function reprovar(id) {
+        $.get('index.php?r=site/reprovacao&id='+id,function (dados) {
+            console.log(dados);
         });
     }
 

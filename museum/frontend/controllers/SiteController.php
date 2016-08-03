@@ -53,6 +53,23 @@ class SiteController extends Controller
         $connection->createCommand($sql)->execute();
     }
 
+
+    public function actionAprovacao($id){
+
+        $sql="UPDATE Historia SET status=1 WHERE id ='$id'";
+        $connection = Yii::$app->getDb();
+        $connection->createCommand($sql)->execute();
+        return $sql;
+    }
+
+    public function actionReprovacao($id){
+
+        $sql="UPDATE Historia SET status=2 WHERE id ='$id'";
+        $connection = Yii::$app->getDb();
+        $connection->createCommand($sql)->execute();
+        return $sql;
+    }
+
     /**
      * @inheritdoc
      */
