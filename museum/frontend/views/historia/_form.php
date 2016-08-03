@@ -20,12 +20,13 @@ $items = array(
 
 ?>
 <div class="historia-form">
-
+    <div class="box box-primary">
+        <div class="box-header with-border">
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
 
-    <?= $form->field($model, 'autor')->hiddenInput(['value' => Yii::$app->user->identity->getId()])?>
+    <?= $form->field($model, 'autor')->hiddenInput(['value' => Yii::$app->user->identity->getId()])->label('')?>
     <?= $form->field($model, 'nome')->textInput(['maxlength' => true]) ?>
 
 
@@ -93,5 +94,6 @@ $items = array(
     </div>
 
     <?php ActiveForm::end(); ?>
-
+</div>
+        </div>
 </div>

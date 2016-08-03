@@ -76,14 +76,14 @@ class Historia extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'autor' => 'Autor',
-            'nome' => 'Nome',
+            'nome' => 'Título',
             'imagem' => 'Imagem',
-            'descricao' => 'Descricao',
+            'descricao' => 'Descrição',
             'qteViews' => "Qte Views",
             'qteGostei' => 'Qte Gostei',
             'qteNaoGostei' => 'Qte Nao Gostei',
             'qteDenuncias' => 'Qte Denuncias',
-            'duracao' => 'Duracao',
+            'duracao' => 'Duração',
             'status' => 'Status',
             'moderador' => 'Moderador',
         ];

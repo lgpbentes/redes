@@ -19,15 +19,13 @@ $baseUrl = $asset->baseUrl
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="sidebar-mini skin-blue-light">
-<!-- <body class = "sidebar-mini skin-blue-light"> -->
+<body class="fixed layout-top-nav skin-blue-light">
+<!-- <body class = "sidebar-mini skin-blue-light"> -->S
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+<div class="wrapper">
     <?= $this->render('header.php',['baseUrl' => $baseUrl]) ?>
-    <?= $this->render('leftmenu.php',['baseUrl' => $baseUrl]) ?>
     <?= $this->render('content.php',['content' => $content]) ?>
-    <?= $this->render('footer.php',['baseUrl' => $baseUrl]) ?>
 
     <div class="control-sidebar-bg"></div>
 

@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Historia */
 
-$this->title = 'Create Historia';
+$this->title = 'Contar minha História';
 $this->params['breadcrumbs'][] = ['label' => 'Historias', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

@@ -10,9 +10,6 @@ $this->title = 'Museum';
 
 
     <!-- LARISSA BENTES -->
-
-
-
         <!-- Modal -->
         <div class="modal fade" id="MoreInfoModal" role="dialog">
             <div class="modal-dialog">
@@ -84,7 +81,7 @@ $this->title = 'Museum';
                 </div><!-- /.box-body -->
 
             </div>
-            </div>
+        </div>
                 <?php
         }
         }
