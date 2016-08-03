@@ -72,6 +72,8 @@ class HistoriaController extends Controller
         $model->qteDenuncias=0;
         $model->status=0;
         $model->moderador=null;
+        //adicionando autor de forma estatica
+        //$model->autor=4;
         if ($model->load(Yii::$app->request->post())) {
             $model->imagem = UploadedFile::getInstance($model, 'imagem');
             $model->upload();

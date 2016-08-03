@@ -1,6 +1,6 @@
 <header class="main-header">
 <!-- Logo -->
-<a href="index2.html" class="logo">
+<a href="http://localhost/redes/museum/frontend/web/index.php" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini"><b>Museu</b></span>
     <!-- logo for regular state and mobile devices -->
@@ -249,8 +249,9 @@
                 <a href="#" class="btn btn-default btn-flat">Profile</a>
             </div>
             <div class="pull-right">
-                <form action="/redes/museum/frontend/web/index.php?r=site%2Flogout" method="GET">
-                <button type="submit" class="btn btn-default btn-flat">Sair</button>
+                <form action="/redes/museum/frontend/web/index.php?r=site%2Flogout" method="POST">
+                    <input type="hidden" name="_csrf-frontend">
+                    <button  href="/redes/museum/frontend/Landing_Page/?#" type="submit" class="btn btn-link">Sairr</button></form>
                 </form>
             </div>
 

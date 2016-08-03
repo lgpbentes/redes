@@ -27,6 +27,15 @@ class SiteController extends Controller
         return json_encode($resultado);
     }
 
+    public function actionLike($id){
+        //ainda fazendo
+        //$sql=
+        $historia = Historia::findOne($id);
+        $historia->qteGostei = "3";
+        $historia->update();
+        return true;
+    }
+
     /**
      * @inheritdoc
      */

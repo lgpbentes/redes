@@ -29,8 +29,8 @@
             </li>
 
             <li>
-                <a href="#">
-                    <i class="fa fa-th"></i> <span>Publicações Salvas</span>
+                <a href="/redes/museum/frontend/web/index.php">
+                    <i class="fa fa-th"></i> <span>Todas as publicações</span>
                 </a>
             </li>
 

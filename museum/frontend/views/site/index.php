@@ -1,5 +1,7 @@
 <?php
 use frontend\models\Historia;
+use common\models\User;
+
 /* @var $this yii\web\View */
 
 $this->title = 'Museum';
@@ -26,7 +28,7 @@ $this->title = 'Museum';
                     </div>
                     <div class="modal-footer">
                         <div align="left">
-                            <button type="button" class="btn btn-success btn-sm"><i class="fa fa-thumbs-up"></i> </button>
+                            <button onclick="like()" type="button" class="btn btn-success btn-sm"><i class="fa fa-thumbs-up"></i> </button>
                             <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i> </button>
                         </div>
                     </div>
@@ -43,12 +45,14 @@ $this->title = 'Museum';
             //var_dump($hist);
 
             $numHistoria = $hist->id;
-            $autor = $hist->autor;
+            //procura pelo username do autor da postagem
+            $autor = User::findOne($hist->autor)->username;
             $caminhoImagem= "/redes/museum/".$hist->imagem;
             $tempo = $hist->duracao;
             $titulo = $hist->nome;
             $qteLikes = $hist->qteGostei;
             $qteDeslikes = $hist->qteNaoGostei;
+
 
 
             ?>
@@ -99,6 +103,12 @@ $this->title = 'Museum';
             titulo.innerHTML = dados.titulo;
             descricao.innerHTML= dados.descricao;
 
+        });
+    }
+
+    function like() {
+        $.get('index.php?r=site/like&id='+60,function (dados) {
+            console.log(dados);
         });
     }
 </script>
