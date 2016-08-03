@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\Historia;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -18,6 +19,14 @@ use frontend\models\ContactForm;
  */
 class SiteController extends Controller
 {
+
+    public function actionDetalhes($id){
+        $hist = Historia::findOne($id);
+        $resultado=["titulo"=>$hist->nome, "descricao"=>$hist->descricao];
+
+        return json_encode($resultado);
+    }
+
     /**
      * @inheritdoc
      */
@@ -72,6 +81,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+
         return $this->render('index');
     }
 
