@@ -8,14 +8,13 @@ use yii\imagine\Image;
 use yii\helpers\Json;
 use Imagine\Image\Box;
 use Imagine\Image\Point;
-use yii\web\UploadedFile;
-
+use common\models\User;
 
 /**
  * This is the model class for table "Historia".
  *
  * @property string $id
- * @property string $autor
+ * @property int $autor
  * @property string $nome
  * @property string $imagem
  * @property string $descricao
@@ -26,13 +25,13 @@ use yii\web\UploadedFile;
  * @property integer $status
  * @property string $moderador
  *
- * @property Usuario $autor0
+ * @property User $autor0
  * @property Moderador $moderador0
  * @property UsuarioComentaHistoria[] $usuarioComentaHistorias
  * @property UsuarioDenunciaHistoria[] $usuarioDenunciaHistorias
- * @property Usuario[] $usuarios
+ * @property User[] $usuarios
  * @property UsuarioReageHistoria[] $usuarioReageHistorias
- * @property Usuario[] $usuarios0
+ * @property User[] $usuarios0
  */
 
 class Historia extends \yii\db\ActiveRecord
@@ -62,7 +61,7 @@ class Historia extends \yii\db\ActiveRecord
             [['qteGostei', 'qteNaoGostei', 'qteDenuncias', 'duracao', 'status'], 'integer'],
             [['id'], 'string', 'max' => 6],
             [['autor', 'nome', 'moderador'], 'string', 'max' => 20],
-            [['autor'], 'exist', 'skipOnError' => true, 'targetClass' => Usuario::className(), 'targetAttribute' => ['autor' => 'username']],
+            [['autor'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['autor' => 'id']],
             [['moderador'], 'exist', 'skipOnError' => true, 'targetClass' => Moderador::className(), 'targetAttribute' => ['moderador' => 'login']],
         ];
     }
@@ -92,7 +91,7 @@ class Historia extends \yii\db\ActiveRecord
      */
     public function getAutor0()
     {
-        return $this->hasOne(Usuario::className(), ['username' => 'autor']);
+        return $this->hasOne(User::className(), ['id' => 'autor']);
     }
 
     /**
@@ -124,7 +123,7 @@ class Historia extends \yii\db\ActiveRecord
      */
     public function getUsuarios()
     {
-        return $this->hasMany(Usuario::className(), ['username' => 'usuario'])->viaTable('Usuario_denuncia_Historia', ['historia' => 'id']);
+        return $this->hasMany(User::className(), ['id' => 'usuario'])->viaTable('Usuario_denuncia_Historia', ['historia' => 'id']);
     }
 
     /**
@@ -140,7 +139,7 @@ class Historia extends \yii\db\ActiveRecord
      */
     public function getUsuarios0()
     {
-        return $this->hasMany(Usuario::className(), ['username' => 'usuario'])->viaTable('Usuario_reage_Historia', ['historia' => 'id']);
+        return $this->hasMany(User::className(), ['id' => 'usuario'])->viaTable('Usuario_reage_Historia', ['historia' => 'id']);
     }
 
     private $nome, $extensao;
