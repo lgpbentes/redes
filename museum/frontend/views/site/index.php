@@ -10,7 +10,7 @@ $this->title = 'Museum';
 
 
     <!-- LARISSA BENTES -->
-    <div class="col-md-6">
+
 
 
         <!-- Modal -->
@@ -53,9 +53,11 @@ $this->title = 'Museum';
             $qteLikes = $hist->qteGostei;
             $qteDeslikes = $hist->qteNaoGostei;
 
+            if($hist->status == 1){
 
 
             ?>
+        <div class="col-md-4">
             <div class="box box-widget">
                 <div class="box-header with-border">
 
@@ -80,13 +82,12 @@ $this->title = 'Museum';
 
                 </div><!-- /.box-body -->
 
-
+            </div>
+            </div>
                 <?php
         }
+        }
         ?>
-        </div>
-    </div>
-
 </div>
 
 <script>
