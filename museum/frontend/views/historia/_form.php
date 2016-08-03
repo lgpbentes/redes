@@ -35,7 +35,9 @@ $items = array(
 
     <?= $form->field($model, 'descricao')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'duracao')->textInput() ?>
+    <?= $form->field($model, 'duracao')->hiddenInput()?>
+
+    <!--<?= $form->field($model, 'duracao')->textInput() ?>-->
 
     <label class="control-label">Ano(s)</label>
     <select id="anos" class="form-control" style="width:100px" onchange="calculaDuracao()">

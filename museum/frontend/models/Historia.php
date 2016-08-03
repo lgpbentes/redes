@@ -18,6 +18,7 @@ use common\models\User;
  * @property string $nome
  * @property string $imagem
  * @property string $descricao
+ * @property string $qteViews
  * @property integer $qteGostei
  * @property integer $qteNaoGostei
  * @property integer $qteDenuncias
@@ -60,7 +61,8 @@ class Historia extends \yii\db\ActiveRecord
             [['descricao'], 'string'],
             [['qteGostei', 'qteNaoGostei', 'qteDenuncias', 'duracao', 'status'], 'integer'],
             [['id'], 'string', 'max' => 6],
-            [['autor', 'nome', 'moderador'], 'string', 'max' => 20],
+            [['autor', 'moderador'], 'string', 'max' => 20],
+            [['nome'],'string', 'max'=>35],
             [['autor'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['autor' => 'id']],
             [['moderador'], 'exist', 'skipOnError' => true, 'targetClass' => Moderador::className(), 'targetAttribute' => ['moderador' => 'login']],
         ];
@@ -77,6 +79,7 @@ class Historia extends \yii\db\ActiveRecord
             'nome' => 'Nome',
             'imagem' => 'Imagem',
             'descricao' => 'Descricao',
+            'qteViews' => "Qte Views",
             'qteGostei' => 'Qte Gostei',
             'qteNaoGostei' => 'Qte Nao Gostei',
             'qteDenuncias' => 'Qte Denuncias',

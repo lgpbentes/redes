@@ -50,6 +50,7 @@ $this->title = 'Museum';
             $caminhoImagem= "/redes/museum/".$hist->imagem;
             $tempo = $hist->duracao;
             $titulo = $hist->nome;
+            $qteViews = $hist->qteViews;
             $qteLikes = $hist->qteGostei;
             $qteDeslikes = $hist->qteNaoGostei;
 
@@ -78,7 +79,7 @@ $this->title = 'Museum';
                     <img class="img-responsive pad" src="<?= $caminhoImagem ?>" alt="Photo">
                     <p><?=$titulo?></p>
                     <button onclick="detalhar(<?=$numHistoria?>)" type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i> Saber mais</button>
-                    <span class="pull-right text-muted"><!--3 views - --> <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
+                    <span class="pull-right text-muted"><?=$qteViews?> views -  <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
 
                 </div><!-- /.box-body -->
 

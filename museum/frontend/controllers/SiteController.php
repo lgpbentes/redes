@@ -21,14 +21,20 @@ class SiteController extends Controller
 {
 
 
-
     public function actionDetalhes($id){
+
         $hist = Historia::findOne($id);
         $resultado=["titulo"=>$hist->nome, "descricao"=>$hist->descricao];
+        $qteAtual = $hist->qteViews;
+        $qteAtual++;
+        $sql="UPDATE Historia SET qteViews=$qteAtual WHERE id ='$id'";
+        $connection = Yii::$app->getDb();
+        $connection->createCommand($sql)->execute();
 
         return json_encode($resultado);
     }
 
+    // no action like e deslike falta adicionar na tabela usuario_reage_historia
     public function actionLike($id){
         $historia = Historia::findOne($id);
         $qteAtual=$historia->qteGostei;
