@@ -20,6 +20,8 @@ use frontend\models\ContactForm;
 class SiteController extends Controller
 {
 
+
+
     public function actionDetalhes($id){
         $hist = Historia::findOne($id);
         $resultado=["titulo"=>$hist->nome, "descricao"=>$hist->descricao];
@@ -28,12 +30,21 @@ class SiteController extends Controller
     }
 
     public function actionLike($id){
-        //ainda fazendo
-        //$sql=
         $historia = Historia::findOne($id);
-        $historia->qteGostei = "3";
-        $historia->update();
-        return true;
+        $qteAtual=$historia->qteGostei;
+        $qteAtual++;
+        $sql="UPDATE Historia SET qteGostei=$qteAtual WHERE id ='$id'";
+        $connection = Yii::$app->getDb();
+        $connection->createCommand($sql)->execute();
+    }
+
+    public function actionDeslike($id){
+        $historia = Historia::findOne($id);
+        $qteAtual=$historia->qteNaoGostei;
+        $qteAtual++;
+        $sql="UPDATE Historia SET qteNaoGostei=$qteAtual WHERE id ='$id'";
+        $connection = Yii::$app->getDb();
+        $connection->createCommand($sql)->execute();
     }
 
     /**

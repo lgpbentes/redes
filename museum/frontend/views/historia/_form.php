@@ -24,11 +24,11 @@ $items = array(
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
-   <?= $form->field($model, 'autor')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'autor')->hiddenInput(['value' => Yii::$app->user->identity->getId()])?>
     <?= $form->field($model, 'nome')->textInput(['maxlength' => true]) ?>
 
-<!--   <?= $form->field($model, 'imagem')->fileInput(['class'=>'form-control']) ?>-->
+
     <?=$form->field($model, 'imagem')->widget(Cropbox::className(), [
     'attributeCropInfo' => 'crop_info']) ?>
 

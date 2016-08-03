@@ -29,7 +29,7 @@ $this->title = 'Museum';
                     <div class="modal-footer">
                         <div align="left">
                             <button onclick="like()" type="button" class="btn btn-success btn-sm"><i class="fa fa-thumbs-up"></i> </button>
-                            <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i> </button>
+                            <button onclick="deslike()" type="button" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i> </button>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ $this->title = 'Museum';
             $qteLikes = $hist->qteGostei;
             $qteDeslikes = $hist->qteNaoGostei;
 
-            if($hist->status == 1){
+            if($hist->status == 0){
 
 
             ?>
@@ -91,8 +91,9 @@ $this->title = 'Museum';
 </div>
 
 <script>
-
+    var historiaclicada;
     function detalhar(id) {
+        historiaclicada = id;
         var titulo, descricao;
         titulo = document.querySelector("#detalheTitulo");
         descricao = document.querySelector("#detalheHistoria");
@@ -108,8 +109,12 @@ $this->title = 'Museum';
     }
 
     function like() {
-        $.get('index.php?r=site/like&id='+60,function (dados) {
-            console.log(dados);
+        $.get('index.php?r=site/like&id='+historiaclicada,function (dados) {});
+    }
+
+    function deslike() {
+        $.get('index.php?r=site/deslike&id='+historiaclicada,function (dados) {
         });
     }
+
 </script>
