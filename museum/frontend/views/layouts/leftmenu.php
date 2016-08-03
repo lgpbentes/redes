@@ -29,8 +29,8 @@
             </li>
 
             <li>
-                <a href="/redes/museum/frontend/web/index.php">
-                    <i class="fa fa-th"></i> <span>Todas as publicações</span>
+                <a href="index.php?r=moderador/index">
+                    <i class="fa fa-th"></i> <span>Moderar Histórias</span>
                 </a>
             </li>
 
