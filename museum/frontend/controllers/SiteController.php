@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use app\models\UsuarioReageHistoria;
 use frontend\models\Historia;
 use Yii;
 use yii\base\Exception;
@@ -15,18 +16,29 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 
+
+
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
-
-
     public function actionDetalhes($id){
-
         $hist = Historia::findOne($id);
-        $resultado=["titulo"=>$hist->nome, "descricao"=>$hist->descricao];
+        $idUser = Yii::$app->user->identity->getId();
 
+        // busca no banco se o usuário já reagiu a história, e qual tipo de reação
+        $reacao = UsuarioReageHistoria::findOne(['usuario'=>$idUser, 'historia'=>$id]);
+        if($reacao){
+            $tipo = $reacao->tipo;
+        }else{
+            $tipo = 0;
+        }
+
+        //objeto json que contem informações (detalhes) da história
+        $resultado=["titulo"=>$hist->nome, "descricao"=>$hist->descricao, "reacao"=> $tipo];
+
+        // atualiza quantidade de views
         $qteAtual = $hist->qteViews;
         $qteAtual++;
         $sql="UPDATE Historia SET qteViews=$qteAtual WHERE id ='$id'";

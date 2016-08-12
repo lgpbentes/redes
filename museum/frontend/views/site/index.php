@@ -25,8 +25,9 @@ $this->title = 'Museum';
                     </div>
                     <div class="modal-footer">
                         <div align="left">
-                            <button onclick="like()" type="button" class="btn btn-success btn-sm"><i class="fa fa-thumbs-up"></i> </button>
-                            <button onclick="deslike()" type="button" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i> </button>
+                            <button id='likeHistoria' onclick="like()" type="button" class="btn btn-success btn-sm"><i class="fa fa-thumbs-up"></i> </button>
+                            <button id= 'deslikeHistoria' onclick="deslike()" type="button" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i> </button>
+                            <span id="reacaoHistoria"></span>
                         </div>
                     </div>
                 </div>
@@ -92,28 +93,54 @@ $this->title = 'Museum';
     var historiaclicada;
     function detalhar(id) {
         historiaclicada = id;
-        var titulo, descricao;
+        var titulo, descricao, reacaoDeslike, reacaoLike, reacaoHistoria;
         titulo = document.querySelector("#detalheTitulo");
         descricao = document.querySelector("#detalheHistoria");
+        reacaoDeslike = document.querySelector("#deslikeHistoria");
+        reacaoLike = document.querySelector("#likeHistoria");
+        reacaoHistoria = document.querySelector("#reacaoHistoria");
 
 
         $.get('index.php?r=site/detalhes&id='+id,function (dados) {
+            console.log(dados);
             dados = JSON.parse(dados);
 
             titulo.innerHTML = dados.titulo;
             descricao.innerHTML= dados.descricao;
+            if(dados.reacao == 1){
+                reacaoDeslike.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+                reacaoHistoria.innerHTML = "  Você deu um like nessa história";
+            } else if (dados.reacao == 2){
+                reacaoLike.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+                reacaoHistoria.innerHTML = "  Você deu um deslike nessa história";
+
+            }
 
         });
     }
 
     function like() {
         $.get('index.php?r=site/like&id='+historiaclicada,function (dados) {
-            console.log("rolou? "+ dados);
+            var  reacaoDeslike, reacaoHistoria;
+
+            reacaoDeslike = document.querySelector("#deslikeHistoria");
+            reacaoHistoria = document.querySelector("#reacaoHistoria");
+
+            reacaoDeslike.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+            reacaoHistoria.innerHTML = "  Você deu um like nessa história";
         });
     }
 
     function deslike() {
+
         $.get('index.php?r=site/deslike&id='+historiaclicada,function (dados) {
+            var  reacaoLike, reacaoHistoria;
+
+            reacaoLike = document.querySelector("#deslikeHistoria");
+            reacaoHistoria = document.querySelector("#reacaoHistoria");
+
+            reacaoLike.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+            reacaoHistoria.innerHTML = "  Você deu um deslike nessa história";
         });
     }
 
