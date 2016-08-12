@@ -107,7 +107,9 @@ $this->title = 'Museum';
     }
 
     function like() {
-        $.get('index.php?r=site/like&id='+historiaclicada,function (dados) {});
+        $.get('index.php?r=site/like&id='+historiaclicada,function (dados) {
+            console.log("rolou? "+ dados);
+        });
     }
 
     function deslike() {
@@ -120,6 +122,5 @@ $this->title = 'Museum';
 <script>
     function reload() {
         location.reload();
-        console.log("teste");
     }
 </script>

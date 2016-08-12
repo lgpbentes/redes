@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use frontend\models\Historia;
 use Yii;
+use yii\base\Exception;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -25,6 +26,7 @@ class SiteController extends Controller
 
         $hist = Historia::findOne($id);
         $resultado=["titulo"=>$hist->nome, "descricao"=>$hist->descricao];
+
         $qteAtual = $hist->qteViews;
         $qteAtual++;
         $sql="UPDATE Historia SET qteViews=$qteAtual WHERE id ='$id'";
@@ -39,18 +41,55 @@ class SiteController extends Controller
         $historia = Historia::findOne($id);
         $qteAtual=$historia->qteGostei;
         $qteAtual++;
-        $sql="UPDATE Historia SET qteGostei=$qteAtual WHERE id ='$id'";
+
+        $idUser = Yii::$app->user->identity->getId();
+        $sql = "INSERT INTO Usuario_reage_Historia (usuario, historia, tipo) VALUES ('$idUser','$id', '1')";
         $connection = Yii::$app->getDb();
-        $connection->createCommand($sql)->execute();
+
+
+        try{
+            // insere na tabela Usuario_reage_historia
+            $connection->createCommand($sql)->execute();
+
+            // foi possivel inserir na tabela (ou seja, o usuário ainda não curtiu essa história)
+            // a qte de likes na história é atualizada
+            $sql="UPDATE Historia SET qteGostei=$qteAtual WHERE id ='$id'";
+            $connection = Yii::$app->getDb();
+            $connection->createCommand($sql)->execute();
+
+        }catch (Exception $e){
+            return $e->getMessage();
+
+        }
+
     }
+
 
     public function actionDeslike($id){
         $historia = Historia::findOne($id);
         $qteAtual=$historia->qteNaoGostei;
         $qteAtual++;
-        $sql="UPDATE Historia SET qteNaoGostei=$qteAtual WHERE id ='$id'";
+
+        $idUser = Yii::$app->user->identity->getId();
+
+        $sql = "INSERT INTO Usuario_reage_Historia (usuario, historia, tipo) VALUES ('$idUser','$id', '2')";
         $connection = Yii::$app->getDb();
-        $connection->createCommand($sql)->execute();
+
+        try{
+            // insere na tabela Usuario_reage_historia
+            $connection->createCommand($sql)->execute();
+
+            // foi possivel inserir na tabela (ou seja, o usuário ainda não curtiu essa história)
+            // a qte de deslikes na história é atualizada
+            $sql="UPDATE Historia SET qteNaoGostei=$qteAtual WHERE id ='$id'";
+            $connection = Yii::$app->getDb();
+            $connection->createCommand($sql)->execute();
+
+        }catch (Exception $e){
+
+        }
+
+
     }
 
 
