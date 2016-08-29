@@ -76,17 +76,46 @@ $this->title = 'Museum';
                 <div class="box-body" style="display: block;">
                     <img class="img-responsive pad" src="<?= $caminhoImagem ?>" alt="Photo">
                     <p><?=$titulo?></p>
-                    <button onclick="detalhar(<?=$numHistoria?>)" type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i> Saber mais</button>
+                    <button onclick="detalhar(<?=$numHistoria?>)" type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i></button>
+                    <button id='likeHistoria' onclick="like()" type="button" class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i> </button>
+                    <button id= 'deslikeHistoria' onclick="deslike()" type="button" class="btn btn-danger btn-xs"><i class="fa fa-thumbs-down"></i> </button>
                     <span class="pull-right text-muted"><?=$qteViews?> views -  <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
 
                 </div><!-- /.box-body -->
 
+                <!-- box comments -->
+                <div class="box-footer box-comments">
+                    <div class="box-comment">
+                        <!-- Foto do Usuário -->
+                        <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="user image">
+                        <div class="comment-text">
+                            <span class="username">
+                                José Alberto
+                                <span class="text-muted pull-right">8:03 PM Today</span>
+                            </span><!-- /.username -->
+                            Aqui vai o comentário da pessoa
+                        </div><!-- /.comment-text -->
+                    </div><!-- /.box-comment -->
+
+                </div><!-- /.box-footer -->
+
+                <!-- box footer -->
+                <div class="box-footer">
+                    <form action="#" method="post">
+                        <img class="img-responsive img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="alt text">
+                        <div class="img-push">
+                            <input type="text" class="form-control input-sm" placeholder="Escreva seu comentário...">
+                        </div>
+                    </form>
+                </div> <!-- /.box-footer -->
+
             </div>
         </div>
-                <?php
+
+    <?php
+            }
         }
-        }
-        ?>
+    ?>
 </div>
 
 <script>
