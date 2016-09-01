@@ -25,8 +25,8 @@ $this->title = 'Museum';
                     </div>
                     <div class="modal-footer">
                         <div align="left">
-                            <button id='likeHistoria' onclick="like()" type="button" class="btn btn-success btn-sm"><i class="fa fa-thumbs-up"></i> </button>
-                            <button id= 'deslikeHistoria' onclick="deslike()" type="button" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i> </button>
+                            <!--<button id='likeHistoria' onclick="like()" type="button" class="btn btn-success btn-sm"><i class="fa fa-thumbs-up"></i> </button>-->
+                            <!--<button id= 'deslikeHistoria' onclick="deslike()" type="button" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i> </button>-->
                             <span id="reacaoHistoria"></span>
                         </div>
                     </div>
@@ -53,10 +53,8 @@ $this->title = 'Museum';
             $qteDeslikes = $hist->qteNaoGostei;
 
             if($hist->status == 1){
-
-
             ?>
-        <div class="col-md-4">
+        <div class="col-md-4" id='<?=$numHistoria?>'>
             <div class="box box-widget">
                 <div class="box-header with-border">
 
@@ -74,11 +72,13 @@ $this->title = 'Museum';
 
                 <!-- box-body -->
                 <div class="box-body" style="display: block;">
-                    <img class="img-responsive pad" src="<?= $caminhoImagem ?>" alt="Photo">
+
+                        <img  src="<?= $caminhoImagem ?>" alt="Photo" height="300" width="370" >
+
                     <p><?=$titulo?></p>
                     <button onclick="detalhar(<?=$numHistoria?>)" type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i></button>
-                    <button id='likeHistoria' onclick="like()" type="button" class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i> </button>
-                    <button id= 'deslikeHistoria' onclick="deslike()" type="button" class="btn btn-danger btn-xs"><i class="fa fa-thumbs-down"></i> </button>
+                    <button id='like<?=$numHistoria?>' onclick="like(this)" type="button" class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i> </button>
+                    <button id= 'deslike<?=$numHistoria?>' onclick="deslike(this)" type="button" class="btn btn-danger btn-xs"><i class="fa fa-thumbs-down"></i> </button>
                     <span class="pull-right text-muted"><?=$qteViews?> views -  <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
 
                 </div><!-- /.box-body -->
@@ -101,12 +101,12 @@ $this->title = 'Museum';
 
                 <!-- box footer -->
                 <div class="box-footer">
-                    <form action="#" method="post">
+                    <!--<form action="" method="post">-->
                         <img class="img-responsive img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="alt text">
                         <div class="img-push">
-                            <input type="text" class="form-control input-sm" placeholder="Escreva seu comentário...">
+                            <input id="cm<?=$numHistoria?>" onkeydown="comentar(this)" type="text" class="form-control input-sm" placeholder="Escreva seu comentário...">
                         </div>
-                    </form>
+                  <!--  </form>-->
                 </div> <!-- /.box-footer -->
 
             </div>
@@ -119,7 +119,21 @@ $this->title = 'Museum';
 </div>
 
 <script>
+    function comentar(cm) {
+            if(event.keyCode == 13) {
+                comment = cm.value;
+                id =  cm.id.substring(2);
+
+                $.get('index.php?r=site/comentar&idHistoria='+id+'&comentario='+comment,function (dados) {
+                    cm.value = "";
+                });
+            }
+    }
+</script>
+
+<script>
     var historiaclicada;
+
     function detalhar(id) {
         historiaclicada = id;
         var titulo, descricao, reacaoDeslike, reacaoLike, reacaoHistoria;
@@ -148,7 +162,7 @@ $this->title = 'Museum';
         });
     }
 
-    function like() {
+    function like_old() {
         $.get('index.php?r=site/like&id='+historiaclicada,function (dados) {
             var  reacaoDeslike, reacaoHistoria;
 
@@ -159,18 +173,35 @@ $this->title = 'Museum';
             reacaoHistoria.innerHTML = "  Você deu um like nessa história";
         });
     }
+    
+    function like(botaoLike) {
+        id = botaoLike.id.substring(4);
+        console.log(id);
+        $.get('index.php?r=site/like&id='+id,function (dados) {
+            botaoLike.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
 
-    function deslike() {
+        });
+    }
 
+    function deslike_old() {
         $.get('index.php?r=site/deslike&id='+historiaclicada,function (dados) {
-            var  reacaoLike, reacaoHistoria;
+            var reacaoLike, reacaoHistoria;
 
-            reacaoLike = document.querySelector("#deslikeHistoria");
+            reacaoLike = document.querySelector("#likeHistoria");
             reacaoHistoria = document.querySelector("#reacaoHistoria");
 
             reacaoLike.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
             reacaoHistoria.innerHTML = "  Você deu um deslike nessa história";
         });
+    }
+    function deslike(botaoDeslike) {
+        id = botaoDeslike.id.substring(7);
+        console.log(id);
+        $.get('index.php?r=site/deslike&id='+id,function (dados) {
+            botaoDeslike.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+
+        });
+
     }
 
 </script>

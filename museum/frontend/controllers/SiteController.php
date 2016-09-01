@@ -48,6 +48,18 @@ class SiteController extends Controller
         return json_encode($resultado);
     }
 
+    public function actionComentar($idHistoria, $comentario){
+        //inserir no banco novo comentario
+        $idUser = Yii::$app->user->identity->getId();
+        $dataHorario = date('Y-m-d H:i:s');
+
+        $sql = "INSERT INTO Usuario_comenta_Historia (usuario, historia, comentario, horario) VALUES ('$idUser', '$idHistoria', '$comentario', '$dataHorario')";
+        $connection = Yii::$app->getDb();
+        $connection->createCommand($sql)->execute();
+
+        return $sql;
+    }
+
     // no action like e deslike falta adicionar na tabela usuario_reage_historia
     public function actionLike($id){
         $historia = Historia::findOne($id);

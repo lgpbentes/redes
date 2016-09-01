@@ -2,21 +2,12 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii\bootstrap\Dropdown;
 use bupy7\cropbox\Cropbox;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Historia */
 /* @var $form yii\widgets\ActiveForm */
 
-$items = array(
-    '1'=>'1',
-    '2'=>'2',
-    '3'=>'3',
-    '4'=>'4',
-    '5'=>'5',
-    '6'=>'6'
-)
 
 ?>
 <div class="historia-form">

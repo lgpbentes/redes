@@ -191,7 +191,7 @@ class Historia extends \yii\db\ActiveRecord
 
         //saving thumbnail
         $newSizeThumb = new Box($cropInfo['dWidth'], $cropInfo['dHeight']);
-        $cropSizeThumb = new Box(500, 500); //frame size of crop
+        $cropSizeThumb = new Box(1000, 1000); //frame size of crop
         $cropPointThumb = new Point($cropInfo['x'], $cropInfo['y']);
         $pathThumbImage = Yii::getAlias('/var/www/html/redes/museum/images')
             . '/publicacao_'
