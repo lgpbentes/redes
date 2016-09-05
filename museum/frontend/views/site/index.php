@@ -1,6 +1,7 @@
 <?php
 use frontend\models\Historia;
 use common\models\User;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 
@@ -38,7 +39,7 @@ $this->title = 'Museum';
 
         <!-- Box Header -->
         <?php
-        $historias = Historia::find()->all();
+        $historias = Historia::find()->orderBy('dataPublicacao DESC')->all();
         foreach ($historias as $id => $hist){
             //var_dump($hist);
 
@@ -51,6 +52,8 @@ $this->title = 'Museum';
             $qteViews = $hist->qteViews;
             $qteLikes = $hist->qteGostei;
             $qteDeslikes = $hist->qteNaoGostei;
+            $dataPublicacao = $hist->dataPublicacao;
+            $dataPublicacao = date('d-m-Y',strtotime($dataPublicacao));
 
             if($hist->status == 1){
             ?>
@@ -62,6 +65,8 @@ $this->title = 'Museum';
                         <img class="img-circle" src="img/perfiltmp.png" alt="Imagem do usuário">
                         <span class="username"><a href="#"><?=$autor?></a></span>
                         <span class="description">Tempo do relacionamento: <?= $tempo ?> dias</span>
+                        <span class="description">Postado em: <?= $dataPublicacao ?> </span>
+
                     </div>
 
                     <div class="box-tools">
@@ -80,7 +85,6 @@ $this->title = 'Museum';
                     <button id='like<?=$numHistoria?>' onclick="like(this)" type="button" class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i> </button>
                     <button id= 'deslike<?=$numHistoria?>' onclick="deslike(this)" type="button" class="btn btn-danger btn-xs"><i class="fa fa-thumbs-down"></i> </button>
                     <span class="pull-right text-muted"><?=$qteViews?> views -  <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
-
                 </div><!-- /.box-body -->
 
                 <!-- box comments -->
@@ -108,9 +112,9 @@ $this->title = 'Museum';
                         </div>
                   <!--  </form>-->
                 </div> <!-- /.box-footer -->
-
             </div>
         </div>
+        
 
     <?php
             }
