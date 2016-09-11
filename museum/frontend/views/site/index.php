@@ -92,7 +92,7 @@ date_default_timezone_set('America/Manaus');
 
                 <?php
                 foreach ($comentarios as $historia => $comentario){
-                    $autorComentario = $comentario->usuario;
+                    $autorComentario = User::findOne($comentario->usuario)->username;
                     $conteudoComentario= $comentario->comentario;
                     $horaComentario = $comentario->horario;
                     $horaComentario = date('d-m-Y h:i a',strtotime($horaComentario));
