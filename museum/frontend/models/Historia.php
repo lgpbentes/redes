@@ -152,8 +152,8 @@ class Historia extends \yii\db\ActiveRecord
         $nome= "imagem_" . $this->imagem->basename;
         $extensao = $this->imagem->extension;
         if ($this->validate()) {
-            $this->imagem->saveAs('\xampp\htdocs\redes\museum\images' . $nome . '.' . $extensao);
-            $this->imagem="\images".$nome.'.'.$extensao;
+            $this->imagem->saveAs('/var/www/html/redes/museum/images/' . $nome . '.' . $extensao);
+            $this->imagem="images/".$nome.'.'.$extensao;
 
             return true;
         } else {
@@ -169,7 +169,7 @@ class Historia extends \yii\db\ActiveRecord
     public function afterSave($insert, $changedAttributes)
     {
         // open image
-        $image = Image::getImagine()->open('\xampp\htdocs\redes\museum'.$this->imagem);
+        $image = Image::getImagine()->open('/var/www/html/redes/museum/'.$this->imagem);
 
         // rendering information about crop of ONE option
         $cropInfo = Json::decode($this->crop_info)[0];
@@ -180,7 +180,7 @@ class Historia extends \yii\db\ActiveRecord
 
 
         //delete old images
-        $oldImages = FileHelper::findFiles(Yii::getAlias('\xampp\htdocs\redes\museum\images'), [
+        $oldImages = FileHelper::findFiles(Yii::getAlias('/var/www/html/redes/museum/images'), [
             'only' => [
                 $this->imagem
             ],
@@ -193,7 +193,7 @@ class Historia extends \yii\db\ActiveRecord
         $newSizeThumb = new Box($cropInfo['dWidth'], $cropInfo['dHeight']);
         $cropSizeThumb = new Box(1000, 1000); //frame size of crop
         $cropPointThumb = new Point($cropInfo['x'], $cropInfo['y']);
-        $pathThumbImage = Yii::getAlias('\xampp\htdocs\redes\museum\images')
+        $pathThumbImage = Yii::getAlias('/var/www/html/redes/museum/images')
             . '/publicacao_'
             . $this->id
             . '.jpg';

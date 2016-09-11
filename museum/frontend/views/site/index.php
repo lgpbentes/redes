@@ -2,10 +2,12 @@
 use frontend\models\Historia;
 use common\models\User;
 use yii\widgets\Pjax;
+use app\models\UsuarioComentaHistoria;
 
 /* @var $this yii\web\View */
 
 $this->title = 'Museum';
+date_default_timezone_set('America/Manaus');
 ?>
 <div class="site-index">
 
@@ -54,6 +56,7 @@ $this->title = 'Museum';
             $qteDeslikes = $hist->qteNaoGostei;
             $dataPublicacao = $hist->dataPublicacao;
             $dataPublicacao = date('d-m-Y',strtotime($dataPublicacao));
+            $comentarios = UsuarioComentaHistoria::find()->where(['historia' => $numHistoria])->all();
 
             if($hist->status == 1){
             ?>
@@ -87,26 +90,35 @@ $this->title = 'Museum';
                     <span class="pull-right text-muted"><?=$qteViews?> views -  <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
                 </div><!-- /.box-body -->
 
+                <?php
+                foreach ($comentarios as $historia => $comentario){
+                    $autorComentario = $comentario->usuario;
+                    $conteudoComentario= $comentario->comentario;
+                    $horaComentario = $comentario->horario;
+                    $horaComentario = date('d-m-Y h:i a',strtotime($horaComentario));
+                 ?>
                 <!-- box comments -->
                 <div class="box-footer box-comments">
                     <div class="box-comment">
                         <!-- Foto do Usuário -->
-                        <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="user image">
+                        <img class="img-circle img-sm" src="img/perfiltmp.png" alt="user image">
                         <div class="comment-text">
                             <span class="username">
-                                José Alberto
-                                <span class="text-muted pull-right">8:03 PM Today</span>
+                                <?=$autorComentario?>
+                                <span class="text-muted pull-right"><?= $horaComentario ?></span>
                             </span><!-- /.username -->
-                            Aqui vai o comentário da pessoa
+                                    <?= $conteudoComentario ?>
                         </div><!-- /.comment-text -->
                     </div><!-- /.box-comment -->
-
                 </div><!-- /.box-footer -->
+                <?php
+                }
+                ?>
 
                 <!-- box footer -->
                 <div class="box-footer">
                     <!--<form action="" method="post">-->
-                        <img class="img-responsive img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="alt text">
+                        <!--<img class="img-responsive img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="alt text">-->
                         <div class="img-push">
                             <input id="cm<?=$numHistoria?>" onkeydown="comentar(this)" type="text" class="form-control input-sm" placeholder="Escreva seu comentário...">
                         </div>
