@@ -14,6 +14,7 @@ use common\models\User;
  * This is the model class for table "Historia".
  *
  * @property string $id
+ * @property boolean $anonima
  * @property int $autor
  * @property string $nome
  * @property string $imagem
@@ -56,6 +57,7 @@ class Historia extends \yii\db\ActiveRecord
     {
         return [
             [['descricao', 'duracao', 'imagem'], 'required'],
+            ['anonima', 'boolean'],
             ['crop_info', 'safe'],
             [['imagem'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
             [['descricao'], 'string'],
@@ -75,6 +77,7 @@ class Historia extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'anonima' => 'Deseja manter anônima?',
             'autor' => 'Autor',
             'nome' => 'Título',
             'imagem' => 'Imagem',
@@ -160,7 +163,6 @@ class Historia extends \yii\db\ActiveRecord
             return false;
         }
     }
-
 
     /**
      * @param bool $insert

@@ -47,7 +47,11 @@ date_default_timezone_set('America/Manaus');
 
             $numHistoria = $hist->id;
             //procura pelo username do autor da postagem
-            $autor = User::findOne($hist->autor)->username;
+            if($hist->anonima){
+                $autor = "Anônimo";
+            }else{
+                $autor = User::findOne($hist->autor)->username;
+            }
             $caminhoImagem= "/redes/museum/".$hist->imagem;
             $tempo = $hist->duracao;
             $titulo = $hist->nome;
