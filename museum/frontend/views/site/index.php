@@ -91,6 +91,9 @@ date_default_timezone_set('America/Manaus');
                     <button onclick="detalhar(<?=$numHistoria?>)" type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i></button>
                     <button id='like<?=$numHistoria?>' onclick="like(this)" type="button" class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i> </button>
                     <button id= 'deslike<?=$numHistoria?>' onclick="deslike(this)" type="button" class="btn btn-danger btn-xs"><i class="fa fa-thumbs-down"></i> </button>
+                    <button id= 'denunciar<?=$numHistoria?>' onclick="denunciar(this)" type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-bullhorn"></span> Denunciar
+                    </button>
                     <span class="pull-right text-muted"><?=$qteViews?> views -  <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
                 </div><!-- /.box-body -->
 
@@ -142,17 +145,27 @@ date_default_timezone_set('America/Manaus');
     function comentar(cm) {
             if(event.keyCode == 13) {
                 comment = cm.value;
-                id =  cm.id.substring(2);
+                id3 =  cm.id.substring(2);
 
-                $.get('index.php?r=site/comentar&idHistoria='+id+'&comentario='+comment,function (dados) {
+                $.get('index.php?r=site/comentar&idHistoria='+id3+'&comentario='+comment,function (dados) {
                     cm.value = "";
+                    reload();
+
                 });
             }
     }
-</script>
 
-<script>
     var historiaclicada;
+
+    function denunciar(botaoDenunciar) {
+        id2 = botaoDenunciar.id.substring(9);
+        console.log(id2);
+        $.get('index.php?r=site/denuncie&idHistoria='+id2,function (dados) {
+            //console.log(dados);
+            botaoDenunciar.style.backgroundColor = "grey";
+        });
+
+    }
 
     function detalhar(id) {
         historiaclicada = id;
@@ -195,9 +208,8 @@ date_default_timezone_set('America/Manaus');
     }
     
     function like(botaoLike) {
-        id = botaoLike.id.substring(4);
-        console.log(id);
-        $.get('index.php?r=site/like&id='+id,function (dados) {
+        id4 = botaoLike.id.substring(4);
+        $.get('index.php?r=site/like&id='+id4,function (dados) {
             botaoLike.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
 
         });
@@ -215,9 +227,8 @@ date_default_timezone_set('America/Manaus');
         });
     }
     function deslike(botaoDeslike) {
-        id = botaoDeslike.id.substring(7);
-        console.log(id);
-        $.get('index.php?r=site/deslike&id='+id,function (dados) {
+        id5 = botaoDeslike.id.substring(7);
+        $.get('index.php?r=site/deslike&id='+id5,function (dados) {
             botaoDeslike.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
 
         });

@@ -60,6 +60,34 @@ class SiteController extends Controller
         return $sql;
     }
 
+    public function actionDenuncie($idHistoria){
+        //inserir no banco novo comentario
+        $idUser = Yii::$app->user->identity->getId();
+
+        $historia = Historia::findOne($idHistoria);
+        $qteAtual=$historia->qteDenuncias;
+        $qteAtual++;
+
+        $sql = "INSERT INTO Usuario_denuncia_Historia (usuario, historia) VALUES ('$idUser', '$idHistoria')";
+        $connection = Yii::$app->getDb();
+
+        try{
+            // insere na tabela Usuario_reage_historia
+            $connection->createCommand($sql)->execute();
+
+            // foi possivel inserir na tabela (ou seja, o usuário ainda não denunciou essa história)
+            // a qte de denuncias na história é atualizada
+            $sql="UPDATE Historia SET qteDenuncias=$qteAtual WHERE id ='$idHistoria'";
+            $connection = Yii::$app->getDb();
+            $connection->createCommand($sql)->execute();
+
+        }catch (Exception $e){
+            return $e->getMessage();
+
+        }
+
+    }
+
     // no action like e deslike falta adicionar na tabela usuario_reage_historia
     public function actionLike($id){
         $historia = Historia::findOne($id);
