@@ -151,7 +151,6 @@ class Historia extends \yii\db\ActiveRecord
     private $nome, $extensao;
     public function upload()
     {
-
         $nome= "imagem_" . $this->imagem->basename;
         $extensao = $this->imagem->extension;
         if ($this->validate()) {

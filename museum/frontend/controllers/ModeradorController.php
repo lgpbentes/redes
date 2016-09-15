@@ -106,6 +106,7 @@ class ModeradorController extends Controller
         return $this->redirect(['index']);
     }
 
+
     /**
      * Finds the Moderador model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
@@ -120,5 +121,10 @@ class ModeradorController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionDenuncias()
+    {
+        return $this->render('denuncias');
     }
 }
