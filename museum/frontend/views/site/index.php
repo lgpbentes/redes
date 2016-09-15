@@ -90,9 +90,12 @@ date_default_timezone_set('America/Manaus');
                     <p><?=$titulo?></p>
                     <button onclick="detalhar(<?=$numHistoria?>)" type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i></button>
                     <button id='like<?=$numHistoria?>' onclick="like(this)" type="button" class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i> </button>
-                    <button id= 'deslike<?=$numHistoria?>' onclick="deslike(this)" type="button" class="btn btn-danger btn-xs"><i class="fa fa-thumbs-down"></i> </button>
-                    <button id= 'denunciar<?=$numHistoria?>' onclick="denunciar(this)" type="button" class="btn btn-default btn-sm">
+                    <button id='deslike<?=$numHistoria?>' onclick="deslike(this)" type="button" class="btn btn-danger btn-xs"><i class="fa fa-thumbs-down"></i> </button>
+                    <button id='denunciar<?=$numHistoria?>' onclick="denunciar(this)" type="button" class="btn btn-default btn-sm">
                         <span class="glyphicon glyphicon-bullhorn"></span> Denunciar
+                    </button>
+                    <button id='salvar<?=$numHistoria?>' onclick="salvar(this)" type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
                     </button>
                     <span class="pull-right text-muted"><?=$qteViews?> views -  <?=$qteLikes?> likes - <?= $qteDeslikes ?> dislikes</span>
                 </div><!-- /.box-body -->
@@ -159,10 +162,18 @@ date_default_timezone_set('America/Manaus');
 
     function denunciar(botaoDenunciar) {
         id2 = botaoDenunciar.id.substring(9);
-        console.log(id2);
         $.get('index.php?r=site/denuncie&idHistoria='+id2,function (dados) {
             //console.log(dados);
             botaoDenunciar.style.backgroundColor = "grey";
+        });
+
+    }
+
+    function salvar(botaoSalvar) {
+        id6 = botaoSalvar.id.substring(6);
+        $.get('index.php?r=site/salvar&idHistoria='+id6,function (dados) {
+            //console.log(dados);
+            botaoSalvar.style.backgroundColor = "green";
         });
 
     }

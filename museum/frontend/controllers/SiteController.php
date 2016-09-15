@@ -85,9 +85,20 @@ class SiteController extends Controller
             return $e->getMessage();
 
         }
-
     }
 
+    public function actionSalvar($idHistoria){
+        //inserir no banco novo comentario
+        $idUser = Yii::$app->user->identity->getId();
+
+        $sql = "INSERT INTO Usuario_salva_Historia (usuario, historia) VALUES ('$idUser', '$idHistoria')";
+        $connection = Yii::$app->getDb();
+        try{
+        $connection->createCommand($sql)->execute();
+        }catch (Exception $e){
+            return $e->getMessage();
+        }
+    }
     // no action like e deslike falta adicionar na tabela usuario_reage_historia
     public function actionLike($id){
         $historia = Historia::findOne($id);
