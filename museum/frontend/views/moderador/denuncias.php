@@ -9,6 +9,7 @@
 use frontend\models\Historia;
 use common\models\User;
 use app\models\UsuarioDenunciaHistoria;
+use frontend\models\Moderador;
 
 /* @var $this yii\web\View */
 
@@ -32,6 +33,12 @@ $this->title = 'Museum';
         $qteDeslikes = $hist->qteNaoGostei;
         $qteDenuncias = $hist->qteDenuncias;
         $descricao = $hist->descricao;
+        $moderador= Moderador::findOne($hist->moderador);
+        if($moderador){
+            $moderador = $moderador->login;
+        }else{
+            $moderador = "nao sei";
+        }
 
         ?>
         <div class="col-md-4">
@@ -42,6 +49,8 @@ $this->title = 'Museum';
                         <img class="img-circle" src="img/perfiltmp.png" alt="Imagem do usuário">
                         <span class="username"><a href="#"><?=$autor?></a></span>
                         <span class="description">Tempo do relacionamento: <?= $tempo ?> dias</span>
+                        <span class="description">Moderador que aprovou: <?= $moderador ?></span>
+
                     </div>
 
                     <div class="box-tools">
@@ -78,5 +87,6 @@ $this->title = 'Museum';
             location.reload();
         });
     }
+
 
 </script>

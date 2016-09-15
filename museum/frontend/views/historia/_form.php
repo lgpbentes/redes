@@ -19,7 +19,7 @@ use bupy7\cropbox\Cropbox;
 
     <?= $form->field($model, 'autor')->hiddenInput(['value' => Yii::$app->user->identity->getId()])->label('')?>
     <?= $form->field($model, 'nome')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'anonima')->checkbox(['label' => 'Anonimo2', 'uncheck' => '0', 'check' => '1'])?>
+    <?= $form->field($model, 'anonima')->checkbox(['label' => 'Anônimo', 'uncheck' => '0', 'check' => '1'])?>
     <?=$form->field($model, 'imagem')->widget(Cropbox::className(), [
     'attributeCropInfo' => 'crop_info']) ?>
 

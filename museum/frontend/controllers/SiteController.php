@@ -157,18 +157,26 @@ class SiteController extends Controller
 
 
     public function actionAprovacao($id){
-
-        $sql="UPDATE Historia SET status=1 WHERE id ='$id'";
+        //$moderador = Yii::$app->user->identity->getId();
+        $moderador = 'moderador1';
+        $sql="UPDATE Historia SET status=1, moderador = '$moderador' WHERE id ='$id'";
         $connection = Yii::$app->getDb();
         $connection->createCommand($sql)->execute();
         return $sql;
     }
 
     public function actionReprovacao($id){
-
         $sql="UPDATE Historia SET status=2 WHERE id ='$id'";
         $connection = Yii::$app->getDb();
         $connection->createCommand($sql)->execute();
+
+        // esse trecho de código é necessário para que a história com denuncia aceita não apareça mais entre as historias denunciadas
+        // no caso de moderação, tanto faz :D
+        $sql="UPDATE Historia SET qteDenuncias=0 WHERE id ='$id'";
+        $connection = Yii::$app->getDb();
+        $connection->createCommand($sql)->execute();
+
+
         return $sql;
     }
 
