@@ -137,4 +137,9 @@ class HistoriaController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    public function actionSalvas()
+    {
+        return $this->render('salvas');
+    }
 }
