@@ -34,6 +34,14 @@
                             echo"<li>";
                                 echo"<a href='index.php?r=moderador/denuncias'>Analisar Denúncias</a>";
                             echo"</li>";
+                            echo"<li class='divider'></li>";
+                            echo"<li>";
+                            echo"<a href='index.php?r=historia/minhas'>Minhas Histórias</a>";
+                            echo"</li>";
+                            echo"<li class='divider'></li>";
+                            echo"<li>";
+                            echo"<a href='index.php?r=historia/salvas'>Favoritas</a>";
+                            echo"</li>";
                         echo"</ul>";
                     echo"</li>";
                 echo"</ul>";

@@ -66,7 +66,6 @@ class HistoriaController extends Controller
 
     public function actionCreate()
     {
-
         $model = new Historia();
         $model->qteGostei=0;
         $model->qteNaoGostei=0;
@@ -77,9 +76,8 @@ class HistoriaController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             $model->imagem = UploadedFile::getInstance($model, 'imagem');
             $model->upload();
-            Yii::error("anonimo", $model->anonima);
+
             if ($model->save(false)) {
-                Yii::error("anonimo2", $model->anonima);
                 return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
@@ -141,5 +139,10 @@ class HistoriaController extends Controller
     public function actionSalvas()
     {
         return $this->render('salvas');
+    }
+
+    public function actionMinhas()
+    {
+        return $this->render('minhas');
     }
 }

@@ -58,7 +58,6 @@ class Historia extends \yii\db\ActiveRecord
         return [
             [['descricao', 'duracao', 'imagem'], 'required'],
             ['anonima', 'boolean'],
-            ['crop_info', 'safe'],
             [['imagem'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
             [['descricao'], 'string'],
             [['qteGostei', 'qteNaoGostei', 'qteDenuncias', 'duracao', 'status'], 'integer'],
@@ -151,7 +150,7 @@ class Historia extends \yii\db\ActiveRecord
     private $nome, $extensao;
     public function upload()
     {
-        $nome= "imagem_" . $this->imagem->basename;
+        $nome= "imagem_tmp";
         $extensao = $this->imagem->extension;
         if ($this->validate()) {
             $this->imagem->saveAs('/var/www/html/redes/museum/images/' . $nome . '.' . $extensao);
@@ -172,14 +171,6 @@ class Historia extends \yii\db\ActiveRecord
         // open image
         $image = Image::getImagine()->open('/var/www/html/redes/museum/'.$this->imagem);
 
-        // rendering information about crop of ONE option
-        $cropInfo = Json::decode($this->crop_info)[0];
-        $cropInfo['dWidth'] = (int)$cropInfo['dWidth']; //new width image
-        $cropInfo['dHeight'] = (int)$cropInfo['dHeight']; //new height image
-        $cropInfo['x'] = $cropInfo['x']; //begin position of frame crop by X
-        $cropInfo['y'] = $cropInfo['y']; //begin position of frame crop by Y
-
-
         //delete old images
         $oldImages = FileHelper::findFiles(Yii::getAlias('/var/www/html/redes/museum/images'), [
             'only' => [
@@ -190,10 +181,7 @@ class Historia extends \yii\db\ActiveRecord
             @unlink($oldImages[$i]);
         }
 
-        //saving thumbnail
-        $newSizeThumb = new Box($cropInfo['dWidth'], $cropInfo['dHeight']);
-        $cropSizeThumb = new Box(1000, 1000); //frame size of crop
-        $cropPointThumb = new Point($cropInfo['x'], $cropInfo['y']);
+
         $pathThumbImage = Yii::getAlias('/var/www/html/redes/museum/images')
             . '/publicacao_'
             . $this->id
@@ -208,9 +196,7 @@ class Historia extends \yii\db\ActiveRecord
 
         $command->execute();
 
-        $image->resize($newSizeThumb)
-            ->crop($cropPointThumb, $cropSizeThumb)
-            ->save($pathThumbImage, ['quality' => 100]);
+        $image->save($pathThumbImage, ['quality' => 100]);
     }
 
 
