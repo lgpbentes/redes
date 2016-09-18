@@ -1,5 +1,6 @@
 {
     "require": {
-        "2amigos/yii2-file-upload-widget": "~1.0"
+        "2amigos/yii2-file-upload-widget": "~1.0",
+        "yiisoft/yii2-authclient": "^2.1"
     }
 }

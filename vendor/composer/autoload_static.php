@@ -13,8 +13,10 @@ class ComposerStaticInitc17f922c4a8dfb28bb20bd9307174966
     public static $prefixLengthsPsr4 = array (
         'y' => 
         array (
+            'yii\\httpclient\\' => 15,
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
+            'yii\\authclient\\' => 15,
             'yii\\' => 4,
         ),
         'd' => 
@@ -29,6 +31,10 @@ class ComposerStaticInitc17f922c4a8dfb28bb20bd9307174966
     );
 
     public static $prefixDirsPsr4 = array (
+        'yii\\httpclient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-httpclient',
+        ),
         'yii\\composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-composer',
@@ -36,6 +42,10 @@ class ComposerStaticInitc17f922c4a8dfb28bb20bd9307174966
         'yii\\bootstrap\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-bootstrap',
+        ),
+        'yii\\authclient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-authclient',
         ),
         'yii\\' => 
         array (
