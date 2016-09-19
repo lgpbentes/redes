@@ -1,6 +1,6 @@
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
+    <section class="sidebar" style="background-color: #F5F5F5">
 
         <!-- Sidebar user panel -->
         <div class="user-panel">
@@ -24,25 +24,33 @@
 
             <li>
                 <a href="index.php?r=historia%2Fcreate">
-                    <i class="fa fa-th"></i> <span>Cadastrar História</span>
+                    <i class="fa fa-commenting"></i> <span>Contar História</span>
                 </a>
             </li>
+
+
+            <li>
+                <a href="index.php?r=historia/minhas">
+                    <i class="fa fa-heartbeat"></i> <span>Minhas Histórias</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="index.php?r=historia/salvas">
+                    <i class="fa fa-star"></i> <span>Histórias Favoritas</span>
+                </a>
+            </li>
+
+            <li class="header">ÁREA ADMIN</li>
 
             <li>
                 <a href="index.php?r=moderador/index">
-                    <i class="fa fa-th"></i> <span>Moderar Histórias</span>
+                    <i class="fa fa-cogs"></i> <span>Moderar Histórias</span>
                 </a>
             </li>
-
             <li>
-                <a href="#">
-                    <i class="fa fa-th"></i> <span>Minhas Publicações</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa fa-th"></i> <span>Widgets</span>
+                <a href="index.php?r=moderador/denuncias">
+                    <i class="fa fa-comments"></i> <span>Analisar Denúncias</span>
                 </a>
             </li>
 
