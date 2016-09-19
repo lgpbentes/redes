@@ -10,7 +10,7 @@ use yii\widgets\Breadcrumbs;
     </section>
 
     <!-- Main Content -->
-    <section class="content" style="width:550px" heigth="100%">
+    <section class="content" style="width:550px; overflow:auto">
         <?= $content ?>
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->

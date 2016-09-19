@@ -54,7 +54,7 @@ date_default_timezone_set('America/Manaus');
     foreach ($historias as $hist) {
         $numHistoria = $hist->id;
 
-        $caminhoImagem =  $hist->imagem;
+        $caminhoImagem = "/redes/museum/" . $hist->imagem;
         $tempo = $hist->duracao;
         $titulo = $hist->nome;
         $qteViews = $hist->qteViews;
@@ -71,7 +71,7 @@ date_default_timezone_set('America/Manaus');
             $hist->status = "Não aceita/Removida";
         }
             ?>
-            <div class="col-md-4" id='<?= $numHistoria ?>'>
+            <div class="col-md-12" id='<?= $numHistoria ?>'>
                 <div class="box box-widget">
                     <div class="box-header with-border">
 
@@ -92,8 +92,9 @@ date_default_timezone_set('America/Manaus');
                     <!-- box-body -->
                     <div class="box-body" style="display: block;">
 
-                        <img src="<?= $caminhoImagem ?>" alt="Photo" height="300" width="370">
-
+                        <p align="center">
+                            <img src="<?= $caminhoImagem ?>" alt="Photo" height="300" width="370">
+                        </p>
                         <p><?= $titulo ?></p>
                         <button onclick="detalhar(<?= $numHistoria ?>)" type="button" class="btn btn-info btn-xs"
                                 data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i

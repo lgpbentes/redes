@@ -59,7 +59,7 @@ date_default_timezone_set('America/Manaus');
         } else {
             $autor = User::findOne($hist->autor)->username;
         }
-        $caminhoImagem =$hist->imagem;
+        $caminhoImagem = "/redes/museum/" . $hist->imagem;
         $tempo = $hist->duracao;
         $titulo = $hist->nome;
         $qteViews = $hist->qteViews;
@@ -71,7 +71,7 @@ date_default_timezone_set('America/Manaus');
 
         if ($hist->status == 1) {
             ?>
-            <div class="col-md-4" id='<?= $numHistoria ?>'>
+            <div class="col-md-12" id='<?= $numHistoria ?>'>
                 <div class="box box-widget">
                     <div class="box-header with-border">
 
@@ -92,7 +92,9 @@ date_default_timezone_set('America/Manaus');
                     <!-- box-body -->
                     <div class="box-body" style="display: block;">
 
-                        <img src="<?= $caminhoImagem ?>" alt="Photo" height="300" width="370">
+                        <p align="center">
+                            <img src="<?= $caminhoImagem ?>" alt="Photo" height="300" width="370">
+                        </p>
 
                         <p><?= $titulo ?></p>
                         <button onclick="detalhar(<?= $numHistoria ?>)" type="button" class="btn btn-info btn-xs"
@@ -102,14 +104,7 @@ date_default_timezone_set('America/Manaus');
                                 class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i></button>
                         <button id='deslike<?= $numHistoria ?>' onclick="deslike(this)" type="button"
                                 class="btn btn-danger btn-xs"><i class="fa fa-thumbs-down"></i></button>
-                        <button id='denunciar<?= $numHistoria ?>' onclick="denunciar(this)" type="button"
-                                class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-bullhorn"></span> Denunciar
-                        </button>
-                        <button id='salvar<?= $numHistoria ?>' onclick="salvar(this)" type="button"
-                                class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
-                        </button>
+
                         <span class="pull-right text-muted"><?= $qteViews ?> views - <?= $qteLikes ?>
                             likes - <?= $qteDeslikes ?> dislikes</span>
                     </div><!-- /.box-body -->

@@ -19,7 +19,7 @@ $this->title = 'Museum';
         $numHistoria = $hist->id;
         //procura pelo username do autor da postagem
         $autor = User::findOne($hist->autor)->username;
-        $caminhoImagem= $hist->imagem;
+        $caminhoImagem= "/redes/museum/".$hist->imagem;
         $tempo = $hist->duracao;
         $titulo = $hist->nome;
         $qteViews = $hist->qteViews;
@@ -29,7 +29,7 @@ $this->title = 'Museum';
 
         if($hist->status == 0){
             ?>
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <div class="box box-widget">
                     <div class="box-header with-border">
 

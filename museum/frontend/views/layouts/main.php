@@ -26,9 +26,15 @@ $baseUrl = $asset->baseUrl
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?= $this->render('header.php',['baseUrl' => $baseUrl]) ?>
-    <?= $this->render('leftmenu.php',['baseUrl' => $baseUrl]) ?>
-    <?= $this->render('content.php',['content' => $content]) ?>
+    <?php
+    echo $this->render('header.php',['baseUrl' => $baseUrl]);
+    if(!Yii::$app->user->isGuest) {
+        echo $this->render('leftmenu.php', ['baseUrl' => $baseUrl]);
+    }
+    echo $this->render('content.php',['content' => $content]);
+
+    ?>
+
 
     <div class="control-sidebar-bg"></div>
 
