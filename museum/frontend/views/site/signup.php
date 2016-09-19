@@ -18,7 +18,9 @@ $this->title = 'Cadastrar Usuário';
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+
+                <?php $form = ActiveForm::begin(['id' => 'form-signup'],['options' => ['enctype' => 'multipart/form-data']]); ?>
+
 
                 <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 
@@ -36,6 +38,9 @@ $this->title = 'Cadastrar Usuário';
                         'format' => 'yyyy-mm-dd'
                     ]
                 ]);?>
+
+                <?= $form->field($model, 'perfil')->fileInput()?>
+
                 <?= $form->field($model, 'cidade') ?>
 
                 <?= $form->field($model, 'password')->passwordInput() ?>

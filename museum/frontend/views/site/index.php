@@ -50,8 +50,11 @@ date_default_timezone_set('America/Manaus');
             //procura pelo username do autor da postagem
             if($hist->anonima){
                 $autor = "Anônimo";
+                $perfil = "img/perfiltmp.png";
             }else{
-                $autor = User::findOne($hist->autor)->username;
+                $quempublica = User::findOne($hist->autor);
+                $autor = $quempublica->username;
+                $perfil = $quempublica->perfil;
             }
             $caminhoImagem= $hist->imagem;
             $tempo = $hist->duracao;
@@ -72,7 +75,7 @@ date_default_timezone_set('America/Manaus');
                 <div class="box-header with-border">
 
                     <div class="user-block">
-                        <img class="img-circle" src="img/perfiltmp.png" alt="Imagem do usuário">
+                        <img class="img-circle" src="<?=$perfil?>" alt="Imagem do usuário">
                         <span class="username"><a href="#"><?=$autor?></a></span>
                         <span class="description">Tempo do relacionamento: <?= $tempo ?> dias</span>
                         <span class="description">Postado em: <?= $dataPublicacao ?> </span>
@@ -113,7 +116,9 @@ date_default_timezone_set('America/Manaus');
 
                 <?php
                 foreach ($comentarios as $historia => $comentario){
-                    $autorComentario = User::findOne($comentario->usuario)->username;
+                    $comentarista = User::findOne($comentario->usuario);
+                    $autorComentario = $comentarista->username;
+                    $perfilcomentarista = $comentarista->perfil;
                     $conteudoComentario= $comentario->comentario;
                     $horaComentario = $comentario->horario;
                     $horaComentario = date('d-m-Y h:i a',strtotime($horaComentario));
@@ -122,7 +127,7 @@ date_default_timezone_set('America/Manaus');
                 <div class="box-footer box-comments">
                     <div class="box-comment">
                         <!-- Foto do Usuário -->
-                        <img class="img-circle img-sm" src="img/perfiltmp.png" alt="user image">
+                        <img class="img-circle img-sm" src=<?=$perfilcomentarista?> alt="user image">
                         <div class="comment-text">
                             <span class="username">
                                 <?=$autorComentario?>

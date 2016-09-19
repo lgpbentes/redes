@@ -25,7 +25,7 @@ $this->title = 'Museum';
         $numHistoria = $hist->id;
         //procura pelo username do autor da postagem
         $autor = User::findOne($hist->autor)->username;
-        $caminhoImagem= "/redes/museum/".$hist->imagem;
+        $caminhoImagem= $hist->imagem;
         $tempo = $hist->duracao;
         $titulo = $hist->nome;
         $qteViews = $hist->qteViews;

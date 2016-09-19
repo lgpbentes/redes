@@ -8,6 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Login';
+$this->registerJs('https://plus.google.com/js/client:platform.js');
 ?>
 
 <div class="col-lg-12">
@@ -26,6 +27,9 @@ $this->title = 'Login';
                     <?= Html::submitButton('Login', ['class' => 'btn btn-primary btn-block', 'name' => 'login-button']) ?>
                     <br>
                     <p align="right">Não é um membro? <a href="/redes/museum/frontend/web/index.php?r=site/signup" style="color: #3c8dbc"><b>Cadastre-se</b></a></p>
+
+                    <?= yii\authclient\widgets\AuthChoice::widget(['baseAuthUrl'=>['site/auth']])?>
+
                 </div>
 
                 <?php ActiveForm::end(); ?>

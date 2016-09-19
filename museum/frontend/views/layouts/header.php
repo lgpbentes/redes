@@ -1,3 +1,8 @@
+<?php
+
+use common\models\User;
+?>
+
 <header class="main-header">
     <nav class="navbar navbar-static-top">
         <div class="container">
@@ -26,7 +31,9 @@
                         <!-- Menu Toggle Button -->
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <!-- The user image in the navbar-->
-                            <img src="img/ufam.png" class="user-image" alt="UFAM">
+                            <?php $caminhoImagem = User::findOne(Yii::$app->user->getId())->perfil;
+                            ?>
+                            <img src='<?= $caminhoImagem ?>' class="user-image" alt="UFAM">
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
                             <span class="hidden-xs">
                                 <?php

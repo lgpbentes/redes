@@ -54,7 +54,7 @@ date_default_timezone_set('America/Manaus');
     foreach ($historias as $hist) {
         $numHistoria = $hist->id;
 
-        $caminhoImagem = "/redes/museum/" . $hist->imagem;
+        $caminhoImagem = $hist->imagem;
         $tempo = $hist->duracao;
         $titulo = $hist->nome;
         $qteViews = $hist->qteViews;
@@ -113,7 +113,9 @@ date_default_timezone_set('America/Manaus');
 
                     <?php
                     foreach ($comentarios as $historia => $comentario) {
-                        $autorComentario = User::findOne($comentario->usuario)->username;
+                        $comentarista = User::findOne($comentario->usuario);
+                        $autorComentario = $comentarista->username;
+                        $perfilcomentario = $comentarista->perfil;
                         $conteudoComentario = $comentario->comentario;
                         $horaComentario = $comentario->horario;
                         $horaComentario = date('d-m-Y h:i a', strtotime($horaComentario));
@@ -122,7 +124,7 @@ date_default_timezone_set('America/Manaus');
                         <div class="box-footer box-comments">
                             <div class="box-comment">
                                 <!-- Foto do Usuário -->
-                                <img class="img-circle img-sm" src="img/perfiltmp.png" alt="user image">
+                                <img class="img-circle img-sm" src="<?=$perfilcomentario ?>" alt="user image">
                                 <div class="comment-text">
                             <span class="username">
                                 <?= $autorComentario ?>

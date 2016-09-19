@@ -36,6 +36,18 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'authClientCollection' => [
+              'class' => 'yii\authclient\Collection',
+              'clients' => [
+                  'google' => [
+                      'class' => 'yii\authclient\clients\Google',
+                      'clientId'=> '401771603396-05ltvvj8rovpc58pj2fem18l5e36brjs.apps.googleusercontent.com',
+                      'clientSecret'=> 'g9Jm5opbDnSwflnz8AxXIhhs',
+                      'returnUrl'=>'http://localhost/redes/museum/frontend/web',
+                  ],
+                  
+                ],
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,

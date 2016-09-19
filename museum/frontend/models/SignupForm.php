@@ -3,6 +3,10 @@ namespace frontend\models;
 
 use yii\base\Model;
 use common\models\User;
+use yii\helpers\FileHelper;
+use yii\imagine\Image;
+use Yii;
+
 
 /**
  * Signup form
@@ -14,6 +18,9 @@ class SignupForm extends Model
     public $password;
     public $dataNascimento;
     public $cidade;
+    public $perfil;
+    public $image;
+    public $image_bkp;
 
     /**
      * @inheritdoc
@@ -28,6 +35,7 @@ class SignupForm extends Model
 
             [['dataNascimento'], 'safe'],
             [['cidade'], 'string', 'max' => 30],
+            [['perfil'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg'],
 
             ['email', 'trim'],
             ['email', 'required'],
@@ -56,9 +64,30 @@ class SignupForm extends Model
         $user->email = $this->email;
         $user->dataNascimento = $this->dataNascimento;
         $user->cidade = $this->cidade;
+        $user->perfil = $this->perfil;
         $user->setPassword($this->password);
         $user->generateAuthKey();
 
         return $user->save() ? $user : null;
     }
+
+    private $nome, $extensao;
+    public function upload()
+    {
+        $nome= "perfil_".$this->username;
+        $extensao = $this->perfil->extension;
+        if ($this->validate()) {
+            $this->perfil->saveAs('img/perfil/' . $nome . '.' . $extensao);
+            $this->perfil="img/perfil/".$nome.'.'.$extensao;
+
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+
+
 }

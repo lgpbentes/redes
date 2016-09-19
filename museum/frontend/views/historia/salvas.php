@@ -59,7 +59,7 @@ date_default_timezone_set('America/Manaus');
         } else {
             $autor = User::findOne($hist->autor)->username;
         }
-        $caminhoImagem = "/redes/museum/" . $hist->imagem;
+        $caminhoImagem =  $hist->imagem;
         $tempo = $hist->duracao;
         $titulo = $hist->nome;
         $qteViews = $hist->qteViews;
