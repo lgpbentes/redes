@@ -10,8 +10,8 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Login';
 ?>
 
-<div class="col-lg-4"></div>
-<div class="col-lg-4">
+
+<div class="col-lg-12">
     <div class="site-login">
 
         <div class="box box-primary">

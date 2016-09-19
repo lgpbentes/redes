@@ -9,6 +9,7 @@ use app\models\UsuarioComentaHistoria;
 $this->title = 'Museum';
 date_default_timezone_set('America/Manaus');
 ?>
+
 <div class="site-index">
 
 
@@ -64,7 +65,9 @@ date_default_timezone_set('America/Manaus');
 
             if($hist->status == 1){
             ?>
-        <div class="col-md-4" id='<?=$numHistoria?>'>
+
+
+        <div class="col-md-12" id='<?=$numHistoria?>'>
             <div class="box box-widget">
                 <div class="box-header with-border">
 
@@ -77,7 +80,13 @@ date_default_timezone_set('America/Manaus');
                     </div>
 
                     <div class="box-tools">
-                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Salvar como Favorito</a></li>
+                            <li><a href="#">Denunciar</a></li>
+                        </ul>
                     </div>
 
                 </div>
@@ -85,8 +94,9 @@ date_default_timezone_set('America/Manaus');
                 <!-- box-body -->
                 <div class="box-body" style="display: block;">
 
-                        <img  src="<?= $caminhoImagem ?>" alt="Photo" height="300" width="370" >
-
+                    <p align="center">
+                    <img  src="<?= $caminhoImagem ?>" alt="Photo" height="300" width="370" >
+                    </p>
                     <p><?=$titulo?></p>
                     <button onclick="detalhar(<?=$numHistoria?>)" type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#MoreInfoModal" data-backdrop="static"><i class="fa fa-eye"></i></button>
                     <button id='like<?=$numHistoria?>' onclick="like(this)" type="button" class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i> </button>
@@ -136,7 +146,7 @@ date_default_timezone_set('America/Manaus');
                 </div> <!-- /.box-footer -->
             </div>
         </div>
-        
+
 
     <?php
             }

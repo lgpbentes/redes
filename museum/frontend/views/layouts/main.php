@@ -25,7 +25,7 @@ $baseUrl = $asset->baseUrl
 <!-- <body class = "sidebar-mini skin-blue-light"> -->
 <?php $this->beginBody() ?>
 
-<div class="wrapper">
+<div class="wrap">
     <?= $this->render('header.php',['baseUrl' => $baseUrl]) ?>
     <?= $this->render('leftmenu.php',['baseUrl' => $baseUrl]) ?>
     <?= $this->render('content.php',['content' => $content]) ?>

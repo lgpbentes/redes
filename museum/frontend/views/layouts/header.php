@@ -16,69 +16,10 @@
             <?php
             if(Yii::$app->user->isGuest){
 
-            }else{
-              echo"<!-- Collect the nav links, forms, and other content for toggling -->";
-                echo"<div class='collapse navbar-collapse pull-left' id='navbar-collapse'>";
-                echo"<ul class='nav navbar-nav'>";
-                    echo"<li class='dropdown'>";
-                        echo"<a href='#' class='dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>Funcionalidades<span class='caret'></span></a>";
-                        echo"<ul class='dropdown-menu' role='menu'>";
-                            echo"<li>";
-                                echo"<a href='index.php?r=historia%2Fcreate'>Cadastrar História</a>";
-                            echo"</li>";
-                            echo"<li class='divider'></li>";
-                            echo"<li>";
-                                echo"<a href='index.php?r=moderador/index'>Moderar Histórias</a>";
-                            echo"</li>";
-                            echo"<li class='divider'></li>";
-                            echo"<li>";
-                                echo"<a href='index.php?r=moderador/denuncias'>Analisar Denúncias</a>";
-                            echo"</li>";
-                            echo"<li class='divider'></li>";
-                            echo"<li>";
-                            echo"<a href='index.php?r=historia/minhas'>Minhas Histórias</a>";
-                            echo"</li>";
-                            echo"<li class='divider'></li>";
-                            echo"<li>";
-                            echo"<a href='index.php?r=historia/salvas'>Favoritas</a>";
-                            echo"</li>";
-                        echo"</ul>";
-                    echo"</li>";
-                echo"</ul>";
-
-            echo "</div><!-- /.navbar-collapse -->";
-            }
-            ?>
-            <?php
-            if(Yii::$app->user->isGuest){
-
             }else{ ?>
             <!-- Navbar Right Menu -->
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-
-                    <!-- Notifications Menu -->
-                    <li class="dropdown notifications-menu">
-                        <!-- Menu toggle button -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-bell-o"></i>
-                            <span class="label label-warning">10</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">You have 10 notifications</li>
-                            <li>
-                                <!-- Inner Menu: contains the notifications -->
-                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
-                                        <li><!-- start notification -->
-                                            <a href="#">
-                                                <i class="fa fa-users text-aqua"></i> 5 new members joined today
-            </a>
-                                        </li><!-- end notification -->
-                                    </ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
-                            </li>
-                            <li class="footer"><a href="#">View all</a></li>
-                        </ul>
-                    </li>
 
                     <!-- User Account Menu -->
                     <li class="dropdown user user-menu">
@@ -95,8 +36,8 @@
                                     echo Yii::$app->user->identity->username;
                                 }
                                 ?>
-            </span>
-            </a>
+                            </span>
+                        </a>
             <ul class="dropdown-menu">
                 <!-- The user image in the menu -->
                 <li class="user-header">

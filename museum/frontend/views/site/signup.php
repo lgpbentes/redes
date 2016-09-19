@@ -10,8 +10,8 @@ use dosamigos\datepicker\DatePicker;
 
 $this->title = 'Cadastrar Usuário';
 ?>
-<div class="col-lg-3"></div>
-<div class="col-lg-6">
+
+<div class="col-lg-12">
     <div class="site-signup">
 
         <h1><?= Html::encode($this->title) ?></h1>
