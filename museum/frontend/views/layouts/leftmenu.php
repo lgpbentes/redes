@@ -42,7 +42,9 @@
             </li>
             
             <?php
-            if((Yii::$app->user->identity->autenticacao)!=0){
+            if(Yii::$app->user->identity){
+                if((Yii::$app->user->identity->autenticacao)!=0){
+            
             ?>
             <li class="header">ÁREA ADMIN</li>
 
@@ -59,6 +61,7 @@
 
               
             <?php
+            }
             }
             ?>
            
