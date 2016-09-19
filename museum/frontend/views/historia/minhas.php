@@ -54,7 +54,7 @@ date_default_timezone_set('America/Manaus');
     foreach ($historias as $hist) {
         $numHistoria = $hist->id;
 
-        $caminhoImagem = "/redes/museum/" . $hist->imagem;
+        $caminhoImagem =  $hist->imagem;
         $tempo = $hist->duracao;
         $titulo = $hist->nome;
         $qteViews = $hist->qteViews;
