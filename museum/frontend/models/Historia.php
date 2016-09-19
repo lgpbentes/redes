@@ -153,7 +153,7 @@ class Historia extends \yii\db\ActiveRecord
         $nome= "imagem_tmp";
         $extensao = $this->imagem->extension;
         if ($this->validate()) {
-            $this->imagem->saveAs('/var/www/html/redes/museum/images/' . $nome . '.' . $extensao);
+            $this->imagem->saveAs('images/' . $nome . '.' . $extensao);
             $this->imagem="images/".$nome.'.'.$extensao;
 
             return true;
@@ -169,10 +169,10 @@ class Historia extends \yii\db\ActiveRecord
     public function afterSave($insert, $changedAttributes)
     {
         // open image
-        $image = Image::getImagine()->open('/var/www/html/redes/museum/'.$this->imagem);
+        $image = Image::getImagine()->open($this->imagem);
 
         //delete old images
-        $oldImages = FileHelper::findFiles(Yii::getAlias('/var/www/html/redes/museum/images'), [
+        $oldImages = FileHelper::findFiles(Yii::getAlias('images'), [
             'only' => [
                 $this->imagem
             ],
@@ -182,7 +182,7 @@ class Historia extends \yii\db\ActiveRecord
         }
 
 
-        $pathThumbImage = Yii::getAlias('/var/www/html/redes/museum/images')
+        $pathThumbImage = Yii::getAlias('images')
             . '/publicacao_'
             . $this->id
             . '.jpg';
